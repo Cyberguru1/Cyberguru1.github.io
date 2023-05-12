@@ -22,23 +22,23 @@
 -----------------------------------------------------
 The task involves a Colladae file, the first step I took was to open the file in Three.js, an online emulator for 3D designs. Upon loading the file,we got this 
 -----------------------------------------------------
-![](files/vm0/image.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/vm0/image.png)
 
  I noticed that the box contained two gears, and I decided to change the view to wireframe to better understand the structure of the model.
  -----------------------------------------------------
- ![](files/vm0/image2.png)
+ ![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/vm0/image2.png)
 
 By switching to wireframe view, I was able to see the box's internal structure more clearly and identify the gears. I then proceeded to dismantle the box by removing each Lego piece in the body one by one until the gears were the only components remaining. This process allowed me to focus solely on the gears.
 
 -----------------------------------------------------
-![](files/vm0/Studio_Project.gif)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/vm0/Studio_Project.gif)
 
 
 To go into further detail, a Collada file is a type of 3D model file format that is used to represent 3D graphics in a variety of applications. Three.js is a JavaScript library that provides a simple way to create and display 3D graphics on the web. By using Three.js to load the Collada file, I was able to easily manipulate and explore the 3D model, including changing the view to wireframe mode to see the model's internal structure.
 
 After dismantling the box by removing each Lego piece by piece we arrived at this.
 -----------------------------------------------------
-![](files/vm0/image3.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/vm0/image3.png)
 
 The driver gear (the bigger one) has 40 teeths, while the driven gear (the smaller one) has 8 teeths. So, if the driver gear makes 1 rotation, the driven gear will make 5 rotations. If you recall we have an input we got from the file we downloaded from the task description.
 
@@ -68,7 +68,7 @@ cool, we got our flag
 ## Ready Gladiator 0 (100 points)
 ---------------------------------------------------
 
-![](files/RG0/RG0.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/RG0/RG0.png)
 
 
 This challange is about the CodeWars warriror, in this task they need us to make a warrior that always loses with not ties
@@ -76,7 +76,7 @@ This challange is about the CodeWars warriror, in this task they need us to make
 Simple solution was to send `end` to the terminal after connecting to the instance throws us back our flag!! (<_>)
 
 
-![](files/RG0/Flag_RG0.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/RG0/Flag_RG0.png)
 
 
 ## Ready Gladiator 2 (400 points)
@@ -219,27 +219,27 @@ We use thesame code as ready gladiator 2 to solve this challenge since the solut
 ## Reverse (100 points)
 ----------------------------------------------------
 
-![](files/reverse/reverse.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/reverse/reverse.png)
 
 This was a basic reverse engineering challenge, as usual runing strings on the file and greping for keyword `pico` gave us the flag!! (<_>)
 
-![](files/reverse/reverse_flag.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/reverse/reverse_flag.png)
 
 ## Safe Opener 2 (100 points)
 ---------------------------------------------------
 
-![](files/safeopener/SafeOpener2.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/safeopener/SafeOpener2.png)
 
 Doing the same operation as the previous challenge we got our flag
 
-![](files/safeopener/safeopener_Flag.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/safeopener/safeopener_Flag.png)
 
 ## timer (100 points)
 -----------------------------------------------------
 
 
 
-![](files/timer/timer.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/timer/timer.png)
 
 This an andriod challenge, looks simillar to the apk series in the picoGym, first thing was to unpack the apk file downloaded with 
 
@@ -248,11 +248,11 @@ This an andriod challenge, looks simillar to the apk series in the picoGym, firs
 
 
 
-![](files/NoWayOut/nowayout.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/NoWayOut/nowayout.png)
 
 Finaly!!, some 3D action game for reversing, this a 3D game made with Unity, downloading the file from [here](https://artifacts.picoctf.net/c/285/win.zip) and running it we have
 
-![](files/NoWayOut/nowayout1.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/NoWayOut/nowayout1.png)
 
 the goal of the challenge is to Escape and get the flag
 
@@ -269,7 +269,7 @@ This is a more similar challenge to what [liveoverflow](https://www.youtube.com/
 
 
 
-![](files/power_analysis/power_warmup.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/power_warmup.png)
 
 This challenge is one of the famous side channel attacks out there, but this has to do with AES, starting the instance of the challenge, we see a file, downloading it and on opening we get
 
@@ -332,11 +332,11 @@ print("leakage result:", encrypt_and_leak(pt))
 
 This code is written in Python3 and involves reading a secret key from a text file and using it to encrypt data. The Sbox is a substitution table used for encryption. The "with open" statement reads the contents of the "key.txt" file, stripping any white space and converting the resulting string into bytes using the fromhex method. The Sbox is a list of hexadecimal values that will be used for encryption. The code returns the numbers of the last bit obtained from the result of xorring the key with our supplied plaintext which returns a content from the SBOX and print it to us.
 
-![](files/power_analysis/power_warmup1.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/power_warmup1.png)
 
 connecting to the server using netcat we got similar output as our assertion was correct, we could see that the output of our lekage result is 6 after supplying 16-byte of zero's. Taking a peak at the hint it mentioned ```The "encryption" algorithm is simple and the correlation between the leakage and the key can be very easily modeled```
 
-using this method i was able to write a [script](../writeup/files/power_analysis/warmup_sol.py) to find the possible key used
+using this method i was able to write a [script](../writeup/https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/warmup_sol.py) to find the possible key used
 
 ```
 
@@ -433,7 +433,7 @@ print("Flag bruteforced!!!!!!!!!!!!!!!!!!!!!!!!")
 -----------------------------------------------------------------------------------------
 
 
-![](files/power_analysis/power_1.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/power_1.png)
 
 This is the same concept as warmup, but this time around instead of the number of leaked bits, it returns a list for power trace of about 2600K variables, which each differ for the same plaintext, my first approach was to write a script to send alot of plaintext and store the relation of plaintext and traces as a json file
 this is the sample script which sends about 300 plaintext and store the content in a json file
@@ -476,15 +476,15 @@ with open('tryout.json', 'w') as f:
 ```
 after doing so, the traces was plotted and we have this
 
-![](files/power_analysis/power_1_plot.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/power_1_plot.png)
 
 performing some analysis on this image we realized that the 10 peaks represents the end of each rounds, AES has a total of 10, 12, or 14 rounds (depending on the key size, in this case is 10 as indicated from the key size in the challenge description), each consisting of four main operations: SubBytes, ShiftRows, MixColumns, and AddRoundKey. These operations are performed on the data and the round key to create a new block of ciphertext.
 
 This are the opreations
 
-![](files/power_analysis/opreations.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/opreations.png)
 
-what we are interested in is the SubBytes of the first opeartion where the orginal plaintext and the key is first xorred, extracting the first operation and limiting our search space to the SubBytes operation, i wrote a [script](files/power_analysis/pa1.py) to accomplish that
+what we are interested in is the SubBytes of the first opeartion where the orginal plaintext and the key is first xorred, extracting the first operation and limiting our search space to the SubBytes operation, i wrote a [script](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/pa1.py) to accomplish that
 
 ```
 
@@ -541,16 +541,16 @@ Explanation of the script
  ## Power analysis: 2 (500 points)
 ---------------------------------------------------------------------------------------
 
-![](files/power_analysis/power_2.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/power_2.png)
 
-This is a similar challenge to the previous one but the only constraint here is less number of trace's which in these challenge is limited to 100, i used the same previous script to solve this challenge but i had to vary the threshold and compare the frequency of most occuring keys before we could get the passowrd, after doing that we got our complete flag.!!!!!!!!!! updated [script](files/power_analysis/pa2.py)
+This is a similar challenge to the previous one but the only constraint here is less number of trace's which in these challenge is limited to 100, i used the same previous script to solve this challenge but i had to vary the threshold and compare the frequency of most occuring keys before we could get the passowrd, after doing that we got our complete flag.!!!!!!!!!! updated [script](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/power_analysis/pa2.py)
 
 
 ## SRA (400 points)
 -----------------------------------------------------
 
 
-![](/files/sra/sra.png)
+![](/https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/sra/sra.png)
 
 Downloading the provided script in the challenge descriptin we found out that it's a classic RSA challenge, but this time around we are given our key `d` (envy) and public exponent `e`(sloth), this the script:
 
@@ -616,17 +616,17 @@ for r in range(2, len(ffac)):
         m = long_to_bytes(int(pow(c, d, int(p))))
 ```
 
-full script [here](files/sra/sra_sol.py)
+full script [here](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/sra/sra_sol.py)
 Note:  to run this script you need [Sage Math](https://doc.sagemath.org/html/en/installation/index.html)
 
 The script iterates through all possible combinations of factors in "fac" and checks if the resulting number is a prime of 128 bits. If it is not, the script continues with the next combination. If it is a 128-bit prime, the script derives the plaintext message by raising the ciphertext "c" to the power of "d" modulo "p" and converting the resulting integer to bytes using the "long_to_bytes" function from the "Crypto.Util.number" library.
 
 opening our dockerized sage math 
-![](files/sra/sage_docker.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/sra/sage_docker.png)
 
 running the script for some secs (it's really fast,about 2 secs), sage throws us back our flag
 
-![](files/sra/sage_result.png)
+![](https://github.com/Cyberguru1/nokkers/tree/master/_posts/files/sra/sage_result.png)
 
 
 
