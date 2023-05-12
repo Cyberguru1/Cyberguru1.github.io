@@ -75,10 +75,12 @@ cool, we got our flag
 
 ![](files/RG0/RG0.png)
 
+
 <p>This challange is about the CodeWars warriror, in this task they need us to make a warrior that always loses with not ties</p>
 
 <p>Simple solution was to send `end` to the terminal after connecting to the instance throws us back our flag!! (<_>)</p>
 <hr>
+
 
 ![](files/RG0/Flag_RG0.png)
 
@@ -132,9 +134,13 @@ bmb      dat   <4,step+step
             start
 end
 ```
+
+
 Run the imp file against the server using the nc listener provided by PicoCTF
 
 >command:```nc saturn.picoctf.net 64120 < imp.red```
+
+
 
 ```
 ┌──(bl4ck4non㉿bl4ck4non)-[~/Downloads/CTF/picoCTF_2023/rev_eng]
@@ -202,6 +208,8 @@ Ties: 0
 You did it!
 picoCTF{d3m0n_3xpung3r_ed173f56}
 ```
+
+
 cool, we got our flag
 
 
