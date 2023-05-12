@@ -19,30 +19,25 @@
 
 # REVERSE ENGINEERING
 ## VM0 (100 points)
-<hr>
-
-<p>The task involves a Colladae file, the first step I took was to open the file in Three.js, an online emulator for 3D designs. Upon loading the file,we got this </p>
-<hr>
-
+-----------------------------------------------------
+The task involves a Colladae file, the first step I took was to open the file in Three.js, an online emulator for 3D designs. Upon loading the file,we got this 
+-----------------------------------------------------
 ![](files/vm0/image.png)
 
- <p>I noticed that the box contained two gears, and I decided to change the view to wireframe to better understand the structure of the model.</p>
- <hr>
-
+ I noticed that the box contained two gears, and I decided to change the view to wireframe to better understand the structure of the model.
+ -----------------------------------------------------
  ![](files/vm0/image2.png)
 
-<p>By switching to wireframe view, I was able to see the box's internal structure more clearly and identify the gears. I then proceeded to dismantle the box by removing each Lego piece in the body one by one until the gears were the only components remaining. This process allowed me to focus solely on the gears.
-</p>
-<hr>
+By switching to wireframe view, I was able to see the box's internal structure more clearly and identify the gears. I then proceeded to dismantle the box by removing each Lego piece in the body one by one until the gears were the only components remaining. This process allowed me to focus solely on the gears.
 
+-----------------------------------------------------
 ![](files/vm0/Studio_Project.gif)
 
 
-<p>To go into further detail, a Collada file is a type of 3D model file format that is used to represent 3D graphics in a variety of applications. Three.js is a JavaScript library that provides a simple way to create and display 3D graphics on the web. By using Three.js to load the Collada file, I was able to easily manipulate and explore the 3D model, including changing the view to wireframe mode to see the model's internal structure.</p>
+To go into further detail, a Collada file is a type of 3D model file format that is used to represent 3D graphics in a variety of applications. Three.js is a JavaScript library that provides a simple way to create and display 3D graphics on the web. By using Three.js to load the Collada file, I was able to easily manipulate and explore the 3D model, including changing the view to wireframe mode to see the model's internal structure.
 
-<p>After dismantling the box by removing each Lego piece by piece we arrived at this.</p>
-<hr>
-
+After dismantling the box by removing each Lego piece by piece we arrived at this.
+-----------------------------------------------------
 ![](files/vm0/image3.png)
 
 The driver gear (the bigger one) has 40 teeths, while the driven gear (the smaller one) has 8 teeths. So, if the driver gear makes 1 rotation, the driven gear will make 5 rotations. If you recall we have an input we got from the file we downloaded from the task description.
@@ -71,6 +66,7 @@ cool, we got our flag
 ------------------------------
 
 ## Ready Gladiator 0 (100 points)
+---------------------------------------------------
 
 
 ![](files/RG0/RG0.png)
@@ -85,6 +81,7 @@ Simple solution was to send `end` to the terminal after connecting to the instan
 
 
 ## Ready Gladiator 2 (400 points)
+--------------------------------------------
 
 
 This challenge focuses on wining every round in a CoreWars game, So the plan is to find a suitable strategy to make our warrior win every round in the game
@@ -213,37 +210,44 @@ cool, we got our flag
 
 
 ## Ready Gladiator 1 (200 points)
-<hr>
+-----------------------------------------------------
+
+
+
 
 We use thesame code as ready gladiator 2 to solve this challenge since the solution need's it to get atleast one win which the code has
 
 ## Reverse (100 points)
-<hr>
+----------------------------------------------------
 
 ![](files/reverse/reverse.png)
 
-<p>This was a basic reverse engineering challenge, as usual runing strings on the file and greping for keyword `pico` gave us the flag!! (<_>)</p>
+This was a basic reverse engineering challenge, as usual runing strings on the file and greping for keyword `pico` gave us the flag!! (<_>)
 
 ![](files/reverse/reverse_flag.png)
 
 ## Safe Opener 2 (100 points)
-<hr>
+---------------------------------------------------
 
 ![](files/safeopener/SafeOpener2.png)
 
-<p>Doing the same operation as the previous challenge we got our flag</p>
+Doing the same operation as the previous challenge we got our flag
 
 ![](files/safeopener/safeopener_Flag.png)
 
 ## timer (100 points)
-<hr>
+-----------------------------------------------------
+
+
 
 ![](files/timer/timer.png)
 
-<p>This an andriod challenge, looks simillar to the apk series in the picoGym, first thing was to unpack the apk file downloaded with <p>
+This an andriod challenge, looks simillar to the apk series in the picoGym, first thing was to unpack the apk file downloaded with 
 
 ## No way out (200 points)
-<hr>
+-----------------------------------------------------
+
+
 
 ![](files/NoWayOut/nowayout.png)
 
@@ -253,7 +257,7 @@ Finaly!!, some 3D action game for reversing, this a 3D game made with Unity, dow
 
 the goal of the challenge is to Escape and get the flag
 
-<p> Upon launching the game and engaging in gameplay, I discovered that the game had limitations within its virtual walls. Despite being able to climb the ladder and view the visually mounted flag, it was unattainable. However, through the use of some tutorials and cheat engine, I was able to manipulate the character's position in both time and space. To achieve this, I initially attached the running game process to the cheat engine. Prior to running the game, it is advisable to follow all tutorials in the cheat engine as it is immensely helpful in identifying and changing parameters during gameplay. Next, I proceeded to locate the player's coordinates, which proved to be a cumbersome task. My technique involved finding the player's y-axis by differentiating between movement levels of high and low altitude values. After several minutes of searching, I was able to determine the player's y-axis. The x, y, and z coordinates are 4 bytes apart in the address register, thus by adding 4 bytes to the y-coordinate, we were able to determine the remaining coordinates, thereby allowing for teleportation to the flag destination without any constraints.After doing so we were greeted with a screen of our flag.</p> 
+ Upon launching the game and engaging in gameplay, I discovered that the game had limitations within its virtual walls. Despite being able to climb the ladder and view the visually mounted flag, it was unattainable. However, through the use of some tutorials and cheat engine, I was able to manipulate the character's position in both time and space. To achieve this, I initially attached the running game process to the cheat engine. Prior to running the game, it is advisable to follow all tutorials in the cheat engine as it is immensely helpful in identifying and changing parameters during gameplay. Next, I proceeded to locate the player's coordinates, which proved to be a cumbersome task. My technique involved finding the player's y-axis by differentiating between movement levels of high and low altitude values. After several minutes of searching, I was able to determine the player's y-axis. The x, y, and z coordinates are 4 bytes apart in the address register, thus by adding 4 bytes to the y-coordinate, we were able to determine the remaining coordinates, thereby allowing for teleportation to the flag destination without any constraints.After doing so we were greeted with a screen of our flag. 
 
 This is a more similar challenge to what [liveoverflow](https://www.youtube.com/watch?v=yAl_6qg6ZnA) once solved
 
@@ -262,7 +266,9 @@ This is a more similar challenge to what [liveoverflow](https://www.youtube.com/
 # Cryptography
 
 ## Power analysis: warmup (200 points)
-<hr>
+-----------------------------------------------------
+
+
 
 ![](files/power_analysis/power_warmup.png)
 
@@ -411,22 +417,21 @@ assert len(flag) == 32, "not done"
 print("Flag bruteforced!!!!!!!!!!!!!!!!!!!!!!!!")
 ```
 
-<p>  The code uses a for loop to iterate through 16 possible values of k. Within the loop, the code initializes several variables to their initial values, and then attempts to generate a string of binary digits that represents the output of an encryption function. </p>
-<p> The code first generates a hex representation of the integer i, which ranges from 0 to 256. It then pads this hex representation with zeros so that it has a length of 32 characters. The resulting string is passed as input to the encryp function, which generates an output value.</p>
+  The code uses a for loop to iterate through 16 possible values of k. Within the loop, the code initializes several variables to their initial values, and then attempts to generate a string of binary digits that represents the output of an encryption function. 
+ The code first generates a hex representation of the integer i, which ranges from 0 to 256. It then pads this hex representation with zeros so that it has a length of 32 characters. The resulting string is passed as input to the encryp function, which generates an output value.
 
-<p> The code then checks the output value against several variables, including h, prev, start, teach, and first, to determine how to update the output binary string out. Depending on the values of these variables and the relationship between the current output value and the previous output value, the code appends either a 0 or a 1 to out.</p>
+ The code then checks the output value against several variables, including h, prev, start, teach, and first, to determine how to update the output binary string out. Depending on the values of these variables and the relationship between the current output value and the previous output value, the code appends either a 0 or a 1 to out.
 
-<p> Once the loop over i completes, the code tries to match the binary string out to a pre-defined dictionary called mapping. If a match is found, the corresponding key value is added to the flag string. If a match is not found, the code appends a "-" character to the flag string and continues to the next iteration of the loop over k.</p>
+ Once the loop over i completes, the code tries to match the binary string out to a pre-defined dictionary called mapping. If a match is found, the corresponding key value is added to the flag string. If a match is not found, the code appends a "-" character to the flag string and continues to the next iteration of the loop over k.
 
-<p> After all 16 iterations over k complete, the final value of the flag string is printed to the console. If the length of the flag is not exactly 32 characters, an assertion error is raised. Otherwise, a success message is printed to the console.
-</p>
+ After all 16 iterations over k complete, the final value of the flag string is printed to the console. If the length of the flag is not exactly 32 characters, an assertion error is raised. Otherwise, a success message is printed to the console.
+
 
 
 
 
 ## Power analysis: 1 (400 points)
-<hr>
-------------------------------------
+-----------------------------------------------------------------------------------------
 
 
 ![](files/power_analysis/power_1.png)
@@ -535,8 +540,7 @@ Explanation of the script
  The script reads in a JSON file containing the power traces and extracts a subset of the traces. It then performs a loop for each byte of the AES key, using the S-Box and the power traces to try to determine the byte of the key. The script calculates the differences between the means of the power traces for plaintexts that have the same byte in that position and the hypothesized byte value. The byte value with the maximum mean difference is chosen as the likely byte value of the key. The script then outputs the hex representation of the recovered key bytes. The script includes comments that provide some additional context and indicate some code that may have been used in previous iterations but has been commented out in the current version.
 
  ## Power analysis: 2 (500 points)
-<hr>
-----------------------------------
+---------------------------------------------------------------------------------------
 
 ![](files/power_analysis/power_2.png)
 
@@ -544,7 +548,8 @@ This is a similar challenge to the previous one but the only constraint here is 
 
 
 ## SRA (400 points)
-<hr>
+-----------------------------------------------------
+
 
 ![](/files/sra/sra.png)
 
@@ -597,6 +602,8 @@ let's break down the code
 -    If the input string does not match "pride", the program prints "Hubris!".
 
 ### **Finding our `N`**
+------------------------------------
+
 our method of finding the possible vaule of `N` is by finding all the factors of ```d*e-1``` then compute all possible combinations such that the product of all this combination summed with 1 would give us our `N`, this our attack script:
 
 ```
@@ -625,10 +632,17 @@ running the script for some secs (it's really fast,about 2 secs), sage throws us
 
 
 ## Remarks and Cretdits
+-------------------------------------
+
+
 I wanted to express my appreciation to PicoCTF team for the challenges you designed for the recent CTF event. They were incredibly well-crafted and challenging, and they helped me improve my reasoning and technical skills. Your challenges pushed me out of my comfort zone and forced me to think creatively and critically, which I believe is the essence of a good CTF challenge. I found the variety of topics and difficulty levels to be well-balanced, and the hints provided were helpful without giving too much away. Overall, I thoroughly enjoyed the experience and felt like I learned a lot from the challenges. Thank you for your hard work and dedication to creating such an excellent event.
 
 
 ## Remainning Solutions
+-----------------------------
+
+
+
 My amazing team mates [blackAnon](https://github.com/BlackAnon22)  solved the other categories of the challenges
 take a look [here](https://github.com/BlackAnon22/BlackAnon22.github.io/blob/main/posts/CTF%20Competitions/picoCTF_2023.md)
 and [CyberMMA](https://medium.com/@cybermma0/ctf-writeup-picoctf-2023-99ea5d0e28bc)
