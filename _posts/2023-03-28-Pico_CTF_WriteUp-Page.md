@@ -85,7 +85,7 @@ Simple solution was to send `end` to the terminal after connecting to the instan
 
 
 ## Ready Gladiator 2 (400 points)
-<hr>
+
 
 This challenge focuses on wining every round in a CoreWars game, So the plan is to find a suitable strategy to make our warrior win every round in the game
 
