@@ -71,15 +71,14 @@ cool, we got our flag
 ------------------------------
 
 ## Ready Gladiator 0 (100 points)
-<hr>
+
 
 ![](files/RG0/RG0.png)
 
 
-<p>This challange is about the CodeWars warriror, in this task they need us to make a warrior that always loses with not ties</p>
+This challange is about the CodeWars warriror, in this task they need us to make a warrior that always loses with not ties
 
-<p>Simple solution was to send `end` to the terminal after connecting to the instance throws us back our flag!! (<_>)</p>
-<hr>
+Simple solution was to send `end` to the terminal after connecting to the instance throws us back our flag!! (<_>)
 
 
 ![](files/RG0/Flag_RG0.png)
