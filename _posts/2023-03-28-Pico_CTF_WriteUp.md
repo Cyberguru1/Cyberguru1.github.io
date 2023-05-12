@@ -369,48 +369,9 @@ for k in range(0, 16):
                 if val == prev:
                     c = hex(bytes_to_long('c'.encode()))[2:]
                     c = c + '00'*13
-                    c = c.zfill(32)
-                    check = encryp(c)
-                    out.extend([1, 1]) if check <= val  else out.extend([0,0])
-                elif val > prev:
-                    out.extend([0, 1])
-                elif prev > val:
-                    out.extend([1, 0])
-                start = False
-                teach = False
-            else:
-                if val > prev:
-                    out.append(1)
-                elif val == prev and (val == h):
-                    out.append(1)
-                else:
-                    out.append(0)
-            first = False
-            start = True
-            j += 1
-            prev = val
-        ind = list(mapping.values()).index(out)
-        f = str(list(mapping.keys())[ind]).zfill(2)
-        flag = flag + f
-        print("Added: ", f)
-        print("+++++++++++++++++Flag:",flag)
-        full.append(out)
-
-    except:
-        print("failed bit: ")
-        print(out)
-        full.append(out)
-        if out[0] == 0:
-            out[0], out[1] = 1,1
-        else:
-            out[0], out[1] = 0,0
-        try:
-            ind = list(mapping.values()).index(out)
-            flag = flag + list(mapping.keys())[ind]
-        except:
-            flag = flag +'-'
-            continue
-
+                    
+ <--snip>
+  
 print(flag)
 assert len(flag) == 32, "not done"
 print("Flag bruteforced!!!!!!!!!!!!!!!!!!!!!!!!")
