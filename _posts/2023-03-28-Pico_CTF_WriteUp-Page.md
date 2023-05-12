@@ -68,7 +68,6 @@ cool, we got our flag
 ## Ready Gladiator 0 (100 points)
 ---------------------------------------------------
 
-
 ![](files/RG0/RG0.png)
 
 
