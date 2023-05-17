@@ -27,7 +27,7 @@ let's plug it in binja and see what it decompiles to :
 
 ![image](https://Cyberguru1.github.io/posts/crackme/images/binja_View.png)
 
-we could see that the password is read from memory and loaded into `rdx` with the assembly `lea`, then the user is asked for input 
+we could see that the password is read from memory and loaded into `rdx` with the assembly `lea`, then the user is asked for input
 which is then stored into a register, a while loop then iterates through the user input and compares it with the loaded password in memeory
 which for every character if there's a mismatch it breaks and returns incorrect password.
 
@@ -109,30 +109,30 @@ LABEL_10:
   return 0;
 }
 ```
+
 ---
 
 Here is a brief explanation of its functionality:
 
-    -The program starts with the main function, which takes command-line arguments argc, argv, and environment variables envp.
+-The program starts with the main function, which takes command-line arguments argc, argv, and environment variables envp.
 
-    -Some variables (v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, Block, v18, v19) are declared.
+-Some variables (v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, Block, v18, v19) are declared.
 
-    -The program initializes Block as an array of 2 elements and sets other variables to specific initial values.
+-The program initializes Block as an array of 2 elements and sets other variables to specific initial values.
 
-    -The program prints "Welcome to EasyCrackMe!!!" to the standard output.
+-The program prints "Welcome to EasyCrackMe!!!" to the standard output.
 
-    -The program enters a continuous loop where it prompts the user for a password and reads the input.
+-The program enters a continuous loop where it prompts the user for a password and reads the input.
 
-    -The program compares the entered password with a predefined string "a12345". If the password matches, the loop is exited; otherwise, an "Incorrect :(" message is printed, and the loop continues.
+-The program compares the entered password with a predefined string "a12345". If the password matches, the loop is exited; otherwise, an "Incorrect :(" message is printed, and the loop continues.
 
-    -Once the correct password is entered, the program prints "Correct :)".
+-Once the correct password is entered, the program prints "Correct :)".
 
-    -If the length of the entered password is greater than or equal to 16, the program frees memory allocated for the password string.
+-If the length of the entered password is greater than or equal to 16, the program frees memory allocated for the password string.
 
-    -The program returns 0, indicating successful execution.
+-The program returns 0, indicating successful execution.
 
 Overall, this program is a simple password verification system where the user needs to enter the correct password to proceed.
 
 what an easy challenge
 that's all for now!!!!!!!!
-
