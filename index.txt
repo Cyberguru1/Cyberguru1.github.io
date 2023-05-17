@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Home
----
+
 <h2 class="mume-header" id="mainindexhtml-nbspnbsp-contactcontacthtml">   <a href="./index.html">Main</a>   <a href="https://github.com/Cyberguru1">Github</a>  </h2>
+---
+---
 
 ### Hisashiburi dana hacker, Welcome to My Cyber Security Blog, where i talk about CTF's and articles on cybersecurity
 
