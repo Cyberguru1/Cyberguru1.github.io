@@ -2,7 +2,7 @@
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/padlock.png)
 
-This is the first and easy reverse engineering challenge, running the [file](_files/padlock) we have a prompt asking for key input
+This is the first and easy reverse engineering challenge, running the [file](iles/padlock) we have a prompt asking for key input
 
 we could see that its asking for an input passcode, lets try decompiling it with binja we have the following disassembly;
 
@@ -91,8 +91,7 @@ flag{264cec034faef71c642de1721ea26b1f}
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/rick.png)
 
-
-This is the second reverse engineering challenge we were given two files a stripped elf 64-bit binary [program](_files/program) and a encrypted [cipher](_files/ct.enc) text, running the program we have this output
+This is the second reverse engineering challenge we were given two files a stripped elf 64-bit binary [program](https://Cyberguru1.github.io/posts/CTF/files/program) and a encrypted [cipher](https://Cyberguru1.github.io/posts/CTF/files/ct.enc) text, running the program we have this output
 
 ![pic1](https://Cyberguru1.github.io/posts/CTF/images/program1.png)
 
@@ -228,10 +227,9 @@ the function simply creates a key of size 16 byte and stores it in DAT_0014030, 
 <---snip--->
 ```
 
-compiling the program with ` g++ rick.cpp -lcrypto -lssl ` and running it we have our flag as:
+compiling the program with `g++ rick.cpp -lcrypto -lssl` and running it we have our flag as:
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/flagrick_.png)
-
 
 flag{6265a883a2d001d4fe291277bb171bac}
 
@@ -263,7 +261,7 @@ searching through and playing around, firsting i searached for was how the "Save
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/clas.png)
 
-took each class one by one and analyze them, 
+took each class one by one and analyze them,
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/gamestate.png)
 
@@ -290,8 +288,6 @@ private final byte[] encryptSave(String paramString) {
   }
 ```
 
-
-
 analyzing further we could see a call was made to a function called `encryptSave` that encrypts the gameState content into a file using the AES/CBC/PKCS7Padding mode, which uses a 32 bit IV and a KEY.
 
 Finding the IV and KEY
@@ -306,7 +302,7 @@ Finding the IV
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/decrypt.png)
 
-i realized that from the LoadGameActivity.class the class responsible for loading the gameState from the ".sav" file extension we could see that their is a function called String decrypt that uses the first 16 byte of the ".sav" file extension as our IV and the remainning as our cipher text this means that the IV and Cipher text was stored in the same file. 
+i realized that from the LoadGameActivity.class the class responsible for loading the gameState from the ".sav" file extension we could see that their is a function called String decrypt that uses the first 16 byte of the ".sav" file extension as our IV and the remainning as our cipher text this means that the IV and Cipher text was stored in the same file.
 
 with all this information we could easily write a script to decrypt the "SaveFile.sav" in python full file [here](scripts/sol_app.py)
 
@@ -317,7 +313,7 @@ values=[238,236,133,123,132,215,41,111,93,8,227,45,179,170,235,139,150,187,160,2
 key = bytearray(values)
 with open('SaveFile.sav', 'rb') as f:
 	cipher = f.read()
-	
+
 iv = cipher[:16]
 cipher = cipher[16:]
 xcipher = AES.new(key, AES.MODE_CBC, iv)
@@ -325,12 +321,12 @@ mess = xcipher.decrypt(cipher)
 print(mess)
 
 ```
+
 running it we got our flag
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/apkflag.png)
 
 flag{38002abd05c651c83e1d4c0177a8eaca}
-
 
 ## 4. Math_Smasher (scripting)
 
@@ -356,7 +352,7 @@ def downloadFlag():
     if data.status_code != 404:
         with open("flag.png","wb") as f:
             f.write(data.content)
-    
+  
 
 def sendResult(result):
     data ={"eqn_ans":str(result)}
