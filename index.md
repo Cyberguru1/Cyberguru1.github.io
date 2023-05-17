@@ -2,7 +2,8 @@
 layout: default
 title: Home
 ---
-<h2 class="mume-header" id="mainindexhtml-nbspnbsp-contactcontacthtml"><a href="./index.html">Main</a> <a href="https://github.com/Cyberguru1">Githubn</a> 
+
+<h2 class="mume-header" id="mainindexhtml-nbspnbsp-contactcontacthtml">   <a href="./index.html">Main</a>   <a href="https://github.com/Cyberguru1">Github</a>  </h2>
 
 ### Hisashiburi dana hacker, Welcome to My Cyber Security Blog, where i talk about CTF's and articles on cybersecurity
 
@@ -11,26 +12,25 @@ title: Home
 
 ---
 
-<h4 class="mume-header" id="ctf">CTFs:</h4>
+<h3 class="mume-header" id="ctf">CTFs:</h3>
 _CTF is a game designed to let you learn to hack in a safe, rewarding environment. CTF is a free educational games for hackers_
 <hr>
-<hr>
 
-- [[Mar 28, 2023]] [PICO CTF 2023 ](https://Cyberguru1.github.io/nokkers/_posts/CTF/pico_CTF_2023.html)
-- [[Nov 19, 2022]] [Nahamcon CTF ](https://Cyberguru1.github.io/nokkers/_posts/CTF/Nahamcon-EU_2022.html)
-- [[Oct 15, 2022]] [WICTF ](https://Cyberguru1.github.io/nokkers/_posts/CTF/WICTF.html)
+- [ [ Mar 28, 2023 ] [ PICO CTF 2023 ] ](https://Cyberguru1.github.io/nokkers/_posts/CTF/pico_CTF_2023.html)
+- [ [ Nov 19, 2022 ] [ Nahamcon CTF ] ](https://Cyberguru1.github.io/nokkers/_posts/CTF/Nahamcon-EU_2022.html)
+- [ [ Oct 15, 2022 ] [ WICTF ] ](https://Cyberguru1.github.io/nokkers/_posts/CTF/WICTF.html)
 
 ---
 
-<h4 class="mume-header" id="reveng">Reverse Engineering:</h4>
-_Reverse Engineering in a CTF is typically the process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format.
-Very often the goal of a reverse engineering challenge is to understand the functionality of a given program such that you can identify deeper issues._
-<hr>
-<hr>
-<h5 class="mume-header" id="reveng">Crackmes:</h5>
-<hr>
+<h3 class="mume-header" id="reveng">Reverse Engineering:</h3>
+
+_Reverse Engineering in a CTF is typically the process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format. Very often the goal of a reverse engineering challenge is to understand the functionality of a given program such that you can identify deeper issues._
+
 <hr>
 
+<h4 class="mume-header" id="reveng">Crackmes:</h4>
+
+<hr>
 
 
 
