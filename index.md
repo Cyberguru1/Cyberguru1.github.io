@@ -33,7 +33,8 @@ _Reverse Engineering in a CTF is typically the process of taking a compiled (mac
 
 <h4 class="mume-header" id="reveng">Crackmes:</h4>
 
-<hr>
+
+_ This are simple programms writen in different languages and logics which you could use  to improve your reverse engineering skills._<hr>
 
 ---
 
