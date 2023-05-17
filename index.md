@@ -1,9 +1,7 @@
 ---
 layout: default
 title: Home
-
 ---
-
 ### Hisashiburi dana hacker, Welcome to My Cyber Security Blog, where i talk about CTF's and articles on cybersecurity
 
 ---
@@ -33,8 +31,9 @@ _Reverse Engineering in a CTF is typically the process of taking a compiled (mac
 
 <h4 class="mume-header" id="reveng">Crackmes:</h4>
 
+_ This are simple programms writen in different languages and logics which you could use to improve your reverse engineering skills._
 
-_ This are simple programms writen in different languages and logics which you could use to improve your reverse engineering skills._<hr>
+<hr>
 
 ---
 

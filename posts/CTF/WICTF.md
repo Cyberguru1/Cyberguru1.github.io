@@ -1,4 +1,5 @@
 ## The JUGGLER (Misc)
+
 ```
 <?php
 include 'secret.php';
@@ -18,20 +19,18 @@ else {
 ```
 
 This challenge requires us to review the given PHP code as it contains bugs, there are 5 test cases that it needs to pass before it could give us our flag.
- 
- Analyzing the code we could see that challenge is trying to check the contestant's understanding of the commonly found vulnerabilities in PHP known as **PHP type Juggling** and how they could lead to authentication bypass vulnerability. you could read more of PHP type juggling [here](https://medium.com/swlh/php-type-juggling-vulnerabilities-3e28c4ed5c09)
-  
- Now back to the challenge, for a user to be granted access the user must pass the verification with correct login credentials, the bug in this code is firstly a deserialization flaw, the user input is not correctly filtered, the second bug is the second block of if statement we could see that the comparison operator is using only double equal sign **"=="** if a user simply submits an integer input of 0 would successfully log in as admin, since this will evaluate to True, this is because the secret password would be converted to an integer and evaluate to true.
+
+Analyzing the code we could see that challenge is trying to check the contestant's understanding of the commonly found vulnerabilities in PHP known as **PHP type Juggling** and how they could lead to authentication bypass vulnerability. you could read more of PHP type juggling [here](https://medium.com/swlh/php-type-juggling-vulnerabilities-3e28c4ed5c09)
+
+Now back to the challenge, for a user to be granted access the user must pass the verification with correct login credentials, the bug in this code is firstly a deserialization flaw, the user input is not correctly filtered, the second bug is the second block of if statement we could see that the comparison operator is using only double equal sign **"=="** if a user simply submits an integer input of 0 would successfully log in as admin, since this will evaluate to True, this is because the secret password would be converted to an integer and evaluate to true.
 
 Changing the comparison operator from **"=="** to **"==="** correctly passes the check cases and throws our flag.
 
 ![image](https://Cyberguru1.github.io/posts/CTF/images/oie_C7BerbRBduib.png)
 
-
 ## Nimbus prime (OSINT)
 
-
-An image was given, and the challenge was to find the location -the latitude and longitude of the place -
+An image was given, and the challenge was to find the location the latitude and longitude of the place -
 
 ![Phote](https://Cyberguru1.github.io/posts/CTF/images/chall.jpg)
 
@@ -41,7 +40,7 @@ another thing to observe was the nimbus monument (all harry potter fans should k
 
 i went on to google map to search for the nimbus monument, one that is specifically around a station of some sort
 
- ![staion](https://Cyberguru1.github.io/posts/CTF/images/oie_SOKYbPKgzbzo.png)
+![staion](https://Cyberguru1.github.io/posts/CTF/images/oie_SOKYbPKgzbzo.png)
 
 Well the results weren't that appealing to what I was looking for
 
@@ -56,12 +55,9 @@ atlas my intuition was correct it was an airport station called "Humberto Delgad
 getting the latt and long and submitting it
 gave us our flag.....Nice OSINT challenge i enjoyed it. :laughing:
 
-
-
-
 ## C++'s Arena
 
-This challenge has to do with reversing a c++ binary file, two files were given in the challenge 
+This challenge has to do with reversing a c++ binary file, two files were given in the challenge
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/files.png)
 
@@ -73,7 +69,6 @@ Running the encryptor file we see that it ask for text input, supplying a string
 ![](https://Cyberguru1.github.io/posts/CTF/images/run.png)
 
 unhexing the content we see it encrypted and it doesn't give us back our input string
-
 
 ![](https://Cyberguru1.github.io/posts/CTF/images/encr_cont.png)
 
@@ -102,7 +97,7 @@ odd_index = "rgeytk", after shifting becomes "odbvqh"
 
 odd and even combined to "xoxdubevfqrhd"
 
-confirming our analysis using gdb we have: 
+confirming our analysis using gdb we have:
 
 - for the first operation where the string was reversed and toka added:
 
@@ -121,13 +116,11 @@ the content of this function is now returned to another function that performs s
 ![](https://Cyberguru1.github.io/posts/CTF/images/g2.png)
 
 * explanation of the function:
-    the function loops through each character of the combined string and performs:
-    
-    - first, check if the iteration constant is `local_1c` is greater than zero, if it evaluates to true it xors the current index of the string with the last index of the string and if false continue's with the loop
-  
-    - shifts it consecutively by 1, 2, 3, and 8 respectively and xors the content with the shifted result
-  
-    - and then finally prints out the result using printf in hex format "%02X"
+  the function loops through each character of the combined string and performs:
+
+  - first, check if the iteration constant is `local_1c` is greater than zero, if it evaluates to true it xors the current index of the string with the last index of the string and if false continue's with the loop
+  - shifts it consecutively by 1, 2, 3, and 8 respectively and xors the content with the shifted result
+  - and then finally prints out the result using printf in hex format "%02X"
 
 Now after understanding the program, it's time to reverse the operation of each function to get back our encrypted flag,
 i wrote a script [(full script here)](scripts/solution.py) to perform just that
@@ -138,7 +131,7 @@ def zor(x, y):
         if ((i >> x) ^ i) == y:
 
             return i
-            
+          
 def decode(hexx):
     hhex = []
     for i in range(1, len(hexx)//2 + 1):
@@ -153,14 +146,14 @@ def decode(hexx):
         for j in range(3,0,-1):
             v13[i] = zor(j, v13[i])
         if  i > 0 :
-            
+          
             v1 = hhex[i - 1]
             v2 = v13[i]
             v13[i] = v2 ^ v1
-                
+              
 
     #print(''.join([chr(i) for i in v13]))
-    
+  
     flag=''
     for i in range(len(v13)):
         if i & 1 == 0:
