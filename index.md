@@ -16,9 +16,9 @@ title: Home
 _CTF is a game designed to let you learn to hack in a safe, rewarding environment. CTF is a free educational games for hackers_
 <hr>
 
-- [ [2023 Mar, 28]  PICO CTF 2023  ](https://Cyberguru1.github.io/_posts/CTF/pico_CTF_2023.html)
-- [ [2022 Nov, 15]  Nahamcon CTF  ](https://Cyberguru1.github.io/_posts/CTF/Nahamcon-EU_2022.html)
-- [ [2022 Oct, 19]  WICTF  ](https://Cyberguru1.github.io/_posts/CTF/WICTF.html)
+- [ [2023 Mar, 28]  PICO CTF 2023  ](https://Cyberguru1.github.io/posts/CTF/pico_CTF_2023.html)
+- [ [2022 Nov, 15]  Nahamcon CTF  ](https://Cyberguru1.github.io/posts/CTF/Nahamcon-EU_2022.html)
+- [ [2022 Oct, 19]  WICTF  ](https://Cyberguru1.github.io/posts/CTF/WICTF.html)
 
 ---
 
@@ -34,7 +34,7 @@ _Reverse Engineering in a CTF is typically the process of taking a compiled (mac
 <h4 class="mume-header" id="reveng">Crackmes:</h4>
 
 
-_ This are simple programms writen in different languages and logics which you could use  to improve your reverse engineering skills._<hr>
+_ This are simple programms writen in different languages and logics which you could use to improve your reverse engineering skills._<hr>
 
 ---
 
