@@ -2,11 +2,9 @@
 layout: default
 title: Home
 ---
-
 <h2 class="mume-header" id="mainindexhtml-nbspnbsp-contactcontacthtml">   <a href="./index.html">Main</a>   <a href="https://github.com/Cyberguru1">Github</a>  </h2>
 
 ### Hisashiburi dana hacker, Welcome to My Cyber Security Blog, where i talk about CTF's and articles on cybersecurity
-
 
 ---
 
@@ -17,12 +15,12 @@ _CTF is a game designed to let you learn to hack in a safe, rewarding environmen
 <hr>
 
 - [ [2023 Mar, 28]  PICO CTF 2023  ](https://Cyberguru1.github.io/Cyberguru1.github.io/_posts/CTF/pico_CTF_2023.html)
-- [ [2022 Nov, 15 ]  Nahamcon CTF  ](https://Cyberguru1.github.io/Cyberguru1.github.io/_posts/CTF/Nahamcon-EU_2022.html)
+- [ [2022 Nov, 15]  Nahamcon CTF  ](https://Cyberguru1.github.io/Cyberguru1.github.io/_posts/CTF/Nahamcon-EU_2022.html)
 - [ [2022 Oct, 19]  WICTF  ](https://Cyberguru1.github.io/Cyberguru1.github.io/_posts/CTF/WICTF.html)
 
 ---
----
 
+---
 
 <h3 class="mume-header" id="reveng">Reverse Engineering:</h3>
 
@@ -35,9 +33,6 @@ _Reverse Engineering in a CTF is typically the process of taking a compiled (mac
 
 <hr>
 
-
-
-
 ---
 
 <h4 class="mume-header" id="contact">Support Or Get in touch with Me:</h4>
@@ -45,11 +40,9 @@ _Reach Out and Let's Connect! am a DM away let's discuss hacking and cybersecuri
 <hr>
 <hr>
 
-
 <!-- display the social media buttons in your README -->
 
 [![alt text][1.1]][1]
-
 
 <!-- icons with padding -->
 
@@ -64,4 +57,3 @@ _Reach Out and Let's Connect! am a DM away let's discuss hacking and cybersecuri
 [5.1]: http://i.imgur.com/1AGmwO3.png
 [6.1]: http://i.imgur.com/0o48UoR.png
 [1]: http://www.twitter.com/cyberguru1
-
