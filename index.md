@@ -41,7 +41,7 @@ _ This are simple programms writen in different languages and logics which you c
 
 ---
 
-<h3 class="mume-header" id="vulnhub">VulnHub</h3>
+<h3 class="mume-header" id="vulnhub">VulnHub:</h3>
 _ VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' that is (legally) 'breakable, hackable & exploitable' - allowing you to learn in a safe environment and practise 'stuff' out. _
 <hr>
 <hr>
