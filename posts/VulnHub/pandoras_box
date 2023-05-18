@@ -38,7 +38,8 @@ let's try connecting to it using netcat we have ::
 
 we could see a password prompt asking us for a password, we try some random string with no luck, and then I went to google to do some reconnaissance on possible vulnerabilities for Nagios logging
 
-<div style="width:98px;max-width:100%;"><div style="height:0;padding-bottom:58.16%;position:relative;"><iframe width="150" height="155" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/7m974v"></iframe></div><p><h4>That eureker moment!!!</h4></p></div>
+![](https://imgflip.com/embed/7m974v)
+<p><h5>That eureker moment!!!</h5></p>
 
 And Whalaaaaa, we found that it's vulnerable to timing attack; In cryptography, a timing attack is a side-channel attack in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms. More info [here](https://en.wikipedia.org/wiki/Timing_attack)
 
@@ -105,7 +106,8 @@ Here's a breakdown of the code:
 
 After running the code for a while we have:
 
-<div style="width:98px;max-width:100%;"><div style="height:0;padding-bottom:58.16%;position:relative;"><iframe width="150" height="157" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://Cyberguru1.github.io/posts/VulnHub/images/pando_lvl1_flag.gif"></iframe></div><p><h4>Running the script</h4></p></div>
+![](https://Cyberguru1.github.io/posts/VulnHub/images/pando_lvl1_flag.gif)
+<p><h5>Running the script</h5></p>
 
 This the final password:
 
