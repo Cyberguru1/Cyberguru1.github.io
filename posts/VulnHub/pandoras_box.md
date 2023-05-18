@@ -1,11 +1,11 @@
 ### Pandoras box Level *1* of *5*
 
 ![](https://Cyberguru1.github.io/posts/VulnHub/images/pando_site.png)
----
+---------------------------------------------------------------------
 
 About:
-Pandora's box is a Boot2Root VM focused on binary exploitation and 
-reverse engineering. You have to complete all levels to r00t the box. 
+Pandora's box is a Boot2Root VM focused on binary exploitation and
+reverse engineering. You have to complete all levels to r00t the box.
 Some levels come with a README file which you should read.
 
 ---
@@ -71,15 +71,15 @@ while not done:
 		current += chars
 		ttt = chcktime(current)
 		ttt = chcktime(current)
-		
+	
 		if first:
 			min_diff = ttt
 			first = False
-			
+		
 		if ttt < min_diff:
 			min_diff = ttt
 			curr_val = chars
-					
+				
 	flag += curr_val
 	print(flag)
 	p.sendlineafter(b":", flag.encode())
@@ -93,18 +93,17 @@ full script [here](https://Cyberguru1.github.io/posts/VulnHub/images/script.py)
 
 Here's a breakdown of the code:
 
-    -The script sets the IP address `(ip)` and port number `(port)` for the remote server.
-    -The `sample_space` variable contains a string of ASCII letters and digits, which will be used to construct the password.
-    -The script establishes a connection to the remote server using `p = remote(ip, port)`.
-    -The `chcktime` function measures the time it takes to receive a response from the server after sending a password attempt. It sends the password attempt, receives the server's response, and calculates the time difference between sending and receiving the response.
-    -The main loop of the script repeatedly selects a character from sample_space and appends it to the flag variable. It then measures the time it takes to receive a response from the server after sending the updated password attempt.
-    -The script keeps track of the minimum time difference `(min_diff)` and the character that resulted in the minimum time difference `(curr_val)`.
-    -After each iteration of the loop, the selected character is appended to the `flag` variable and sent to the server.
-    -If the server responds with "Logged in ", indicating that the correct password has been guessed, the loop is terminated.
-    -The script prints the current value of `flag` after each iteration to show the progress of the password guessing.
+-The script sets the IP address `(ip)` and port number `(port)` for the remote server.
+-The `sample_space` variable contains a string of ASCII letters and digits, which will be used to construct the password.
+-The script establishes a connection to the remote server using `p = remote(ip, port)`.
+-The `chcktime` function measures the time it takes to receive a response from the server after sending a password attempt. It sends the password attempt, receives the server's response, and calculates the time difference between sending and receiving the response.
+-The main loop of the script repeatedly selects a character from sample_space and appends it to the flag variable. It then measures the time it takes to receive a response from the server after sending the updated password attempt.
+-The script keeps track of the minimum time difference `(min_diff)` and the character that resulted in the minimum time difference `(curr_val)`.
+-After each iteration of the loop, the selected character is appended to the `flag` variable and sent to the server.
+-If the server responds with "Logged in ", indicating that the correct password has been guessed, the loop is terminated.
+-The script prints the current value of `flag` after each iteration to show the progress of the password guessing.
 
 After running the code for a while we have:
-
 
 <div style="width:98px;max-width:100%;"><div style="height:0;padding-bottom:58.16%;position:relative;"><iframe width="98" height="57" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/7m974v"></iframe></div><p><a href="https://Cyberguru1.github.io/posts/VulnHub/images/pando_lvl1_flag.gif">Running the script</a></p></div>
 
@@ -116,7 +115,7 @@ we got the password as `R3sp3ctY04r4dm1niSt4t0rL1keYo4R3spectY04rG0d`, using thi
 
 ![](https://Cyberguru1.github.io/posts/VulnHub//images/pando_lvl1_sucess.png)
 
-And boooom!!! 
+And boooom!!!
 
 we are in!!!!!.....................
 
