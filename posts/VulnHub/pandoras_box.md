@@ -38,7 +38,6 @@ let's try connecting to it using netcat we have ::
 
 we could see a password prompt asking us for a password, we try some random string with no luck, and then I went to google to do some reconnaissance on possible vulnerabilities for Nagios logging
 
-![](https://imgflip.com/embed/7m974v)
 <p><h5>That eureker moment!!!</h5></p>
 
 And Whalaaaaa, we found that it's vulnerable to timing attack; In cryptography, a timing attack is a side-channel attack in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms. More info [here](https://en.wikipedia.org/wiki/Timing_attack)
@@ -72,15 +71,15 @@ while not done:
 		current += chars
 		ttt = chcktime(current)
 		ttt = chcktime(current)
-	
+
 		if first:
 			min_diff = ttt
 			first = False
-		
+	
 		if ttt < min_diff:
 			min_diff = ttt
 			curr_val = chars
-				
+			
 	flag += curr_val
 	print(flag)
 	p.sendlineafter(b":", flag.encode())
@@ -107,6 +106,7 @@ Here's a breakdown of the code:
 After running the code for a while we have:
 
 ![](https://Cyberguru1.github.io/posts/VulnHub/images/pando_lvl1_flag.gif)
+
 <p><h5>Running the script</h5></p>
 
 This the final password:
