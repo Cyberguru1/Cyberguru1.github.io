@@ -14,7 +14,7 @@ runnig the file with wine emulator we could see that it prompts us for a passwor
 
 let's run strings on the file and see what we got:
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/easy_chall_strings.png)
+![image](https://Cyberguru1.github.io/posts/crackme/images/east_chall_strings.png)
 
 we could see the part that asks us for the password and also a 5 digit number, now this could possibly be the password
 let's try it out,

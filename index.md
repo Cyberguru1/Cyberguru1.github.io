@@ -37,6 +37,7 @@ _ This are simple programms writen in different languages and logics which you c
 ---
 
 - [ [2023 May, 17] EasyCrackme (:-_-:) ](https://Cyberguru1.github.io/posts/crackme/EasyCrackMe.html)
+- [ [2023 May, 18] GDB Basics 😄](https://Cyberguru1.github.io/posts/crackme/GDBBasics.html)
 
 ---
 
