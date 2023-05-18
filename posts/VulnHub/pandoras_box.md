@@ -1,5 +1,11 @@
 ### Pandoras box Level *1* of *5*
 
+
+
+![](https://www.vulnhub.com/media/img/entry/watermarked/2c242db3c7efd1c6a0c07c3fdc4a4fc15319ed95.png)
+
+---
+
 ![](https://Cyberguru1.github.io/posts/VulnHub/images/pando_site.png)
 ---------------------------------------------------------------------
 
@@ -10,7 +16,7 @@ Some levels come with a README file which you should read.
 
 ---
 
-This is the first level of the challenge, an OVA file is provided in the challenge [link]() booting up the ova file in to VM ware player we have
+This is the first level of the challenge, an OVA file is provided in the challenge [link](https://www.vulnhub.com/entry/pandoras-box-1,111/) booting up the ova file in to VM ware player we have
 
 ![](https://Cyberguru1.github.io/posts/VulnHub/images/pando.gif)
 
@@ -61,6 +67,7 @@ sample_space =  ascii_letters + digits
 p = remote(ip, port)
 
 <!--snip>
+#script incomplete
 <!--snip>
 
 while not done:
@@ -75,11 +82,11 @@ while not done:
 		if first:
 			min_diff = ttt
 			first = False
-	
+
 		if ttt < min_diff:
 			min_diff = ttt
 			curr_val = chars
-			
+	
 	flag += curr_val
 	print(flag)
 	p.sendlineafter(b":", flag.encode())
@@ -93,15 +100,15 @@ full script [here](https://Cyberguru1.github.io/posts/VulnHub/images/script.py)
 
 Here's a breakdown of the code:
 
--The script sets the IP address `(ip)` and port number `(port)` for the remote server.
--The `sample_space` variable contains a string of ASCII letters and digits, which will be used to construct the password.
--The script establishes a connection to the remote server using `p = remote(ip, port)`.
--The `chcktime` function measures the time it takes to receive a response from the server after sending a password attempt. It sends the password attempt, receives the server's response, and calculates the time difference between sending and receiving the response.
--The main loop of the script repeatedly selects a character from sample_space and appends it to the flag variable. It then measures the time it takes to receive a response from the server after sending the updated password attempt.
--The script keeps track of the minimum time difference `(min_diff)` and the character that resulted in the minimum time difference `(curr_val)`.
--After each iteration of the loop, the selected character is appended to the `flag` variable and sent to the server.
--If the server responds with "Logged in ", indicating that the correct password has been guessed, the loop is terminated.
--The script prints the current value of `flag` after each iteration to show the progress of the password guessing.
+- The script sets the IP address `(ip)` and port number `(port)` for the remote server.
+- The `sample_space` variable contains a string of ASCII letters and digits, which will be used to construct the password.
+- The script establishes a connection to the remote server using `p = remote(ip, port)`.
+- The `chcktime` function measures the time it takes to receive a response from the server after sending a password attempt. It sends the password attempt, receives the server's response, and calculates the time difference between sending and receiving the response.
+- The main loop of the script repeatedly selects a character from sample_space and appends it to the flag variable. It then measures the time it takes to receive a response from the server after sending the updated password attempt.
+- The script keeps track of the minimum time difference `(min_diff)` and the character that resulted in the minimum time difference `(curr_val)`.
+- After each iteration of the loop, the selected character is appended to the `flag` variable and sent to the server.
+- If the server responds with "Logged in ", indicating that the correct password has been guessed, the loop is terminated.
+- The script prints the current value of `flag` after each iteration to show the progress of the password guessing.
 
 After running the code for a while we have:
 

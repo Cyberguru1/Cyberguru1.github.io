@@ -70,4 +70,4 @@ _Reach Out and Let's Connect! am a DM away let's discuss hacking and cybersecuri
 [4.1]: http://i.imgur.com/YckIOms.png
 [5.1]: http://i.imgur.com/1AGmwO3.png
 [6.1]: http://i.imgur.com/0o48UoR.png
-[1]: http://www.twitter.com/cyberguru1
+[1]: http://www.twitter.com/Cyberguru01
