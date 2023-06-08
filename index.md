@@ -42,13 +42,13 @@ _This are simple programms writen in different languages and logics which you co
 
 ---
 
-<h3 class="mume-header" id="binex"> Binary Exploitation: </h3>
+<h3 class="mume-header" id="binex"> Binary Exploitation:</h3>
 
 _This are my notes on Binary Exploitation where i document challenges i solved and script i used in solving them._
 
 <h4 class="mume-header" id="binex">Exploit Education Phoenix:<h4>
 
-_This categories of challenges introduced me to memory corruption, modification, function redirection, and eventually, executing shellcode _
+_This categories of challenges introduced me to memory corruption, modification, function redirection, and eventually, executing shellcode_
 <hr>
 ---
 
