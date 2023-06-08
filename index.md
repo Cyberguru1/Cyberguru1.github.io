@@ -30,7 +30,7 @@ _Reverse Engineering in a CTF is typically the process of taking a compiled (mac
 
 <h4 class="mume-header" id="reveng">Crackmes:</h4>
 
-_ This are simple programms writen in different languages and logics which you could use to improve your reverse engineering skills._
+_This are simple programms writen in different languages and logics which you could use to improve your reverse engineering skills._
 
 <hr>
 ---
@@ -44,23 +44,24 @@ _ This are simple programms writen in different languages and logics which you c
 
 <h3 class="mume-header" id="binex"> Binary Exploitation: </h3>
 
-_ This are my notes on Binary Exploitation where i document challenges i solved and script i used in solving them._
+_This are my notes on Binary Exploitation where i document challenges i solved and script i used in solving them._
 
 <h4 class="mume-header" id="binex">Exploit Education Phoenix:<h4>
 
-_ This categories of challenges introduced me to memory corruption, modification, function redirection, and eventually, executing shellcode. _
+_This categories of challenges introduced me to memory corruption, modification, function redirection, and eventually, executing shellcode _
 <hr>
 ---
 
 - [ [2023 jun, 4] Stack-Zero ](https://Cyberguru1.github.io/posts/phoenix/stack-zero.html)
 - [ [2023 jun, 5] Stack-One ](https://Cyberguru1.github.io/posts/phoenix/stack-one.html)
 - [ [2023 jun, 5] Stack-Two ](https://Cyberguru1.github.io/posts/phoenix/stack-two.html)
+
 <hr>
 ---
 
 <h3 class="mume-header" id="vulnhub">VulnHub:</h3>
 
-_ VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' that is (legally) 'breakable, hackable & exploitable' - allowing you to learn in a safe environment and practise 'stuff' out. _
+_VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' that is (legally) 'breakable, hackable & exploitable' - allowing you to learn in a safe environment and practise 'stuff' out._
 
 <hr>
 <hr>
