@@ -27,7 +27,6 @@ _CTF is a game designed to let you learn to hack in a safe, rewarding environmen
 _Reverse Engineering in a CTF is typically the process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format. Very often the goal of a reverse engineering challenge is to understand the functionality of a given program such that you can identify deeper issues._
 
 <hr>
-<hr>
 
 <h4 class="mume-header" id="reveng">Crackmes:</h4>
 
@@ -36,25 +35,27 @@ _ This are simple programms writen in different languages and logics which you c
 <hr>
 ---
 
-- [ [2023 May, 17] EasyCrackme (:-_-:) ](https://Cyberguru1.github.io/posts/crackme/EasyCrackMe.html)
+- [ [2023 May, 17] EasyCrackme (:-_) ](https://Cyberguru1.github.io/posts/crackme/EasyCrackMe.html)
 - [ [2023 May, 18] GDB Basics 😄](https://Cyberguru1.github.io/posts/crackme/GDBBasics.html)
 - [ [2023 May, 20] Sha256 = Secure ?](https://Cyberguru1.github.io/posts/crackme/Sha256.html)
 - [ [2023 May, 20] G0l4ng_15_C00L ](https://Cyberguru1.github.io/posts/crackme/golang_is_cool.html)
 
 ---
 
-<h3 class="mume-header" id="reveng">Binary Exploitation:</h3>
+<h3 class="mume-header" id="binex"> Binary Exploitation: </h3>
 _This are my notes on Binary Exploitation where i document challenges i solved and script i used in solving them._
 
 <h4>Exploit Education Phoenix<h4>
 
 _This categories of challenges introduced me to memory corruption, modification, function redirection, and eventually, executing shellcode. _
+
 - [ [2023 jun, 4] Stack-Zero ](https://Cyberguru1.github.io/posts/phoenix/stack-zero.html)
 - [ [2023 jun, 5] Stack-One ](https://Cyberguru1.github.io/posts/phoenix/stack-one.html)
 - [ [2023 jun, 5] Stack-Two ](https://Cyberguru1.github.io/posts/phoenix/stack-two.html)
 
 <h3 class="mume-header" id="vulnhub">VulnHub:</h3>
 _ VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' that is (legally) 'breakable, hackable & exploitable' - allowing you to learn in a safe environment and practise 'stuff' out. _
+
 <hr>
 <hr>
 
