@@ -56,7 +56,7 @@ _This categories of challenges introduced me to memory corruption, modification,
 
 ---
 
-- [ [2023 jun, 4] Stack-Zero ](https://Cyberguru1.github.io/posts/phoenix/stack-zero.html)
+- [ [2023 jun, 4] Stack-Zero ](https://Cyberguru1.github.io/posts/phoenix/Stack-zero.html)
 - [ [2023 jun, 5] Stack-One ](https://Cyberguru1.github.io/posts/phoenix/stack-one.html)
 - [ [2023 jun, 5] Stack-Two ](https://Cyberguru1.github.io/posts/phoenix/stack-two.html)
 
