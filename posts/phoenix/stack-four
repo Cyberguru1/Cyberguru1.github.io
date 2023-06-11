@@ -182,7 +182,7 @@ print(p.recvall().decode())
 
 Running the script we got:
 
-![](https://Cyberguru1.github.io/posts/phoenix/files/st4_result.png)
+![](https://Cyberguru1.github.io/posts/phoenix/files/st4-result.png)
 
 and waaala we got the congratz message!!!!!!!
 
