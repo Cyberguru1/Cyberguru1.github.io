@@ -2,7 +2,7 @@
 
 The challenge file was given, an elf file checking the file propertise we could see it's a 64-bit ELF file, not stripped.
 
-!](https://Cyberguru1.github.io/posts/phoenix/files/1688625170436.png)
+![](https://Cyberguru1.github.io/posts/phoenix/files/1688625170436.png)
 
 let's try running the ELF file
 
@@ -20,7 +20,7 @@ The only way to exploit this program is using the fomart string vulnerability, b
 
 Before going forward with the exploit let's run checksec on the ELF file to see the security mechanisms enabled on the file.
 
- ![](https://Cyberguru1.github.io/posts/phoenix/files/1688626124389.png)
+![](https://Cyberguru1.github.io/posts/phoenix/files/1688626124389.png)
 
 we could see that `NX` and `PIE` bit is enabled, meaning we have non executable code in the stack and address layout randomization on the  ELF file respectively, we need to fuzz the ELF file and find some imortant address to bypass the security mechanism.
 
@@ -38,7 +38,7 @@ we found `PIE` leak at index 139
 
 How do we know that's the `PIE` leak, this is true because main start at:
 
- ![](https://Cyberguru1.github.io/posts/phoenix/files/1688628544895.png)
+![](https://Cyberguru1.github.io/posts/phoenix/files/1688628544895.png)
 
 `Libc` leak is found at index 137![](https://Cyberguru1.github.io/posts/phoenix/files/1688628727909.png)
 
@@ -75,7 +75,6 @@ libc.address = libcc - 0x2718a  # setting libc address
 log.info(f"libc address : {hex(libc.address)}")
 
 ```
-
 
 let's now craft our shell payload to execute `/bin/sh`
 
@@ -231,7 +230,6 @@ p.interactive()
 
 
 ```
-
 
 Running the script we have our shell :
 
