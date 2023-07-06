@@ -65,7 +65,10 @@ _This categories of challenges introduced me to memory corruption, modification,
 - [ [2023 jun, 5] Stack-Four ](https://Cyberguru1.github.io/posts/phoenix/stack-four.html)
 
 ---
+
 - [ [2021 Mar, 5] PoP-Twice ](https://Cyberguru1.github.io/posts/phoenix/pop-twice.html)
+
+---
 
 <h3 class="mume-header" id="vulnhub">VulnHub:</h3>
 
