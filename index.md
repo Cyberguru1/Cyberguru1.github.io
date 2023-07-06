@@ -17,7 +17,7 @@ _CTF is a game designed to let you learn to hack in a safe, rewarding environmen
 - [ [2023 Mar, 28]  PICO CTF 2023  ](https://Cyberguru1.github.io/posts/CTF/pico_CTF_2023.html)
 - [ [2022 Nov, 15]  Nahamcon CTF  ](https://Cyberguru1.github.io/posts/CTF/Nahamcon-EU_2022.html)
 - [ [2022 Oct, 19]  WICTF  ](https://Cyberguru1.github.io/posts/CTF/WICTF.html)
-
+- [ [2022 Sept, 22]  Meta CTF 2022  ](https://Cyberguru1.github.io/posts/CTF/MetaCTF_Perplexing_python.html)
 ---
 
 ---
