@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-### Hisashiburi dana hacker, Welcome to My Cyber Security Blog, where i talk about CTF's and articles on cybersecurity
+### Welcome to My Cyber Security Blog, where i talk about Solution to Challenges in CTF's I played
 
 ---
 
@@ -41,7 +41,9 @@ _This are simple programms writen in different languages and logics which you co
 - [ [2023 May, 20] G0l4ng_15_C00L ](https://Cyberguru1.github.io/posts/crackme/golang_is_cool.html)
 
 ---
+
 ---
+
 <hr>
 
 <h3 class="mume-header" id="binex">Binary Exploitation:</h3>
@@ -62,8 +64,8 @@ _This categories of challenges introduced me to memory corruption, modification,
 - [ [2023 jun, 5] Stack-Three ](https://Cyberguru1.github.io/posts/phoenix/stack-three.html)
 - [ [2023 jun, 5] Stack-Four ](https://Cyberguru1.github.io/posts/phoenix/stack-four.html)
 
-
 ---
+ - [ [2021 Mar, 5] PoP-Twice ] (https://Cyberguru1.github.io/posts/phoenix/pop-twice.html)
 
 <h3 class="mume-header" id="vulnhub">VulnHub:</h3>
 
