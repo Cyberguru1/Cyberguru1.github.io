@@ -83,6 +83,16 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
 
 ---
 
+<h3 class="mume-header" id="portswigger_labs">PortsWigger LABS</h3>
+<hr>
+
+- [ [2023 Jul, 22]  SQLi LABS ](https://Cyberguru1.github.io/posts/portswigger/SQL/sql.html)
+- [ [2023 Aug, 5]  XSS LABS  ](https://Cyberguru1.github.io/posts/portswigger/XSS/xss.html)
+
+---
+
+---
+
 <h4 class="mume-header" id="contact">Support Or Get in touch with Me:</h4>
 _Reach Out and Let's Connect! am a DM away let's discuss hacking and cybersecurity!! ._
 <hr>
