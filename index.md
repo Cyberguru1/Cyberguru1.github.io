@@ -87,6 +87,25 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
 <hr>
 
 - [ [2023 Jul, 22]  SQLi LABS ](https://Cyberguru1.github.io/posts/portswigger/SQL/sql.html)
+    - [lab sql injection vulnerability in where clause allowing retrieval of hidden data](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-vulnerability-in-where-clause-allowing-retrieval-of-hidden-data)
+    - [lab sql injection vulnerability allowing login bypass](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-vulnerability-allowing-login-bypass)
+    - [lab sql injection attack querying the database type and version on oracle](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-attack-querying-the-database-type-and-version-on-oracle)
+    - [lab sql injection attack querying the database type and version on mysql and microsoft](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-attack-querying-the-database-type-and-version-on-mysql-and-microsoft)
+    - [lab sql injection attack listing the database contents on non oracle databases](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-attack-listing-the-database-contents-on-non-oracle-databases)
+    - [lab sql injection attack listing the database contents on oracle](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-attack-listing-the-database-contents-on-oracle)
+    - [lab sql injection union attack determining the number of columns returned by the query](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-union-attack-determining-the-number-of-columns-returned-by-the-query)
+    - [lab sql injection union attack finding a column containing text](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-union-attack-finding-a-column-containing-text)
+    - [lab sql injection union attack retrieving data from other tables](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-union-attack-retrieving-data-from-other-tables)
+    - [lab sql injection union attack retrieving multiple values in a single column](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-union-attack-retrieving-multiple-values-in-a-single-column)
+    - [lab blind sql injection with conditional responses](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-conditional-responses)
+    - [lab blind sql injection with conditional errors](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-conditional-errors)
+    - [lab visible error based sql injection](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-visible-error-based-sql-injection)
+    - [lab blind sql injection with time delays](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-time-delays)
+    - [lab blind sql injection with time delays and information retrieval](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-time-delays-and-information-retrieval)
+    - [lab blind sql injection with out of band interaction](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-out-of-band-interaction)
+    - [lab blind sql injection with out of band data exfiltration](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
+    - [lab sql injection with filter bypass via xml encoding](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-with-filter-bypass-via-xml-encoding)
+
 - [ [2023 Aug, 5]  XSS LABS  ](https://Cyberguru1.github.io/posts/portswigger/XSS/xss.html)
 
 ---
