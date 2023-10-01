@@ -1,31 +1,31 @@
 ### EasyCrackMe:)
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/chall_easy_Crackme.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/chall_easy_Crackme.png)
 
 This is our first crackme in the crackme series, downloading the file and unzipping it we have:
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/file_type_easycrack.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/file_type_easycrack.png)
 
 runnig the file with wine emulator we could see that it prompts us for a password
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/easy_chall_run.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/easy_chall_run.png)
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/trying_easy_chall.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/trying_easy_chall.png)
 
 let's run strings on the file and see what we got:
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/east_chall_strings.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/east_chall_strings.png)
 
 we could see the part that asks us for the password and also a 5 digit number, now this could possibly be the password
 let's try it out,
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/easy_chall_worked.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/easy_chall_worked.png)
 
 yeah it worked but what's really going on here ?????
 
 let's plug it in binja and see what it decompiles to :
 
-![image](https://Cyberguru1.github.io/posts/crackme/images/binja_View.png)
+![image](https://blog.cyb3rguru.tech/posts/crackme/images/binja_View.png)
 
 we could see that the password is read from memory and loaded into `rdx` with the assembly `lea`, then the user is asked for input
 which is then stored into a register, a while loop then iterates through the user input and compares it with the loaded password in memeory

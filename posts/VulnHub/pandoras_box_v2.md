@@ -4,15 +4,15 @@
 
 From the solution of the level 1 an executable and a README was provided on how to start up level 2 challenge
 
-![](https://Cyberguru1.github.io/posts/VulnHub//images/pando_lvl1_sucess.png)
+![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pando_lvl1_sucess.png)
 
 contents of the README file:
 
-![](https://Cyberguru1.github.io/posts/VulnHub//images/pendo_lvl2_readme.png)
+![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pendo_lvl2_readme.png)
 
 first we need to extract the executable file from the machine, this can be archived using `socat`, we use `socat` and create a local ftp server into our local machine and transfer the file over the connection as this would help for easy fuzzing and exploitation, after loading the file we tried to execute it, and we are greeted with a menu for Notes manager:
 
-![](https://Cyberguru1.github.io/posts/VulnHub//images/pendo_lvl2_ex.png)
+![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pendo_lvl2_ex.png)
 
 playing with the programm and performing fuzzing we realize that creating a new note and allocating more than 64 bits of data will cause the program to halt and throw us an error from malloc one's you try to create a new note, from this outcome we could already guess that it's a heap overflow challenge (heap overflow challenge usually occurs when a challenge is provided with a menu of some sort which have options to create,assign and delete data from the memory)
 
@@ -81,11 +81,11 @@ The heap overflow occurs when the program writes data beyond the boundaries of a
 
 I took the binary and load it into GDB for easy analysis, I use gdbpeda's cool utility of generating patterns so that we could easily see which part of the memory our input corrupted to, this would really save us a lot of time
 
-![](https://Cyberguru1.github.io/posts/VulnHub//images/pendo_lvl2_gdb.png)
+![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pendo_lvl2_gdb.png)
 
 after the input is supplied to the program, and a new note is created then as expected the program crashes with malloc's failure of corrupted top size, we then use gdbpeda pattern offset to see how much of data we need to overflow unto the stack.
 
-![](https://Cyberguru1.github.io/posts/VulnHub//images/pendo_lvl2_off.png)
+![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pendo_lvl2_off.png)
 
 we see it's `72 bytes` any more of about `4 bytes` would pop into the `ebp` register which is our main goal
 
@@ -261,7 +261,7 @@ let's break down the code
 
 Execuing the script gives us our lovely shell ;), which gives us access to level3 files
 
-![](https://Cyberguru1.github.io/posts/VulnHub//images/pendo_lvl2_shell.png)
+![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pendo_lvl2_shell.png)
 
 That's it guy's
 thanks for reading through.....

@@ -1,33 +1,33 @@
 ### GDB BASICS
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basic.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basic.png)
 
 This another challenge from crackme that tends to test your knowledge of GDB debugger,[link](https://crackmes.one/crackme/645d3d4e33c5d43938913079) to challenge.
 
 A zip file was given in the challenge description, downloading it and unzipping we have:
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_fileinfo.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_fileinfo.png)
 
 we could see that it's a dynamically linked x86-64 executable file which is not stripped (^*__*^), when we run the file it prompts us for a password.
 
 plugging the file in gdb we have:
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_run.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_run.png)
 
 setting the disassembly flavour to intel for easy readability of the assembly and getting info on the available functions we have:
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_gdb.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_gdb.png)
 
 from the previous photo we could see that the executable doesn't have much functions but theres a main
 
 disassemblying the main function we have:
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_disass_main.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_disass_main.png)
 
 we could see that there's some assembly call's here and there
 
 explaning the assembly code
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_asm.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_asm.png)
 
 - the first marked line shows that the decimal `2` is stored  4 bytes down the base pointer `[rbp-0x4]`
 - the second shows that another decimal `2` is stored 8 bytes down the base pointer `[rbp-0x8]`
@@ -64,14 +64,14 @@ we know that the password is generated at runtime of the program and is stored s
 
 going back to gdb and executing the program for the first time and supplying a random password::
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_wp.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_wp.png)
 
 now let's set that breakpoint and examine the contents of `[rbp-0x4]` we have:
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basics_pass.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basics_pass.png)
 
 from the previous pic we could see that our breakpoint was hit and we saw the contents of `[rbp-0x4]` as 219283456 pheeeeee........ that was a easy one, now let's check the password in the program
 
-![](https://Cyberguru1.github.io/posts/crackme/images/gdb_basic_flag.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/gdb_basic_flag.png)
 
 and taraaaaaaaah....... we got our love message!!!!!!!

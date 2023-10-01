@@ -1,20 +1,20 @@
 ### G0l4ng_1s_C00l
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_desc.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_desc.png)
 
 This challenge is based on Golang compiled binaries, so today we are going to reverse a Golang (Mr. memory safe ;) ) executable file, as usual a zip file was given, unzipping the file we have an executable called hey.exe 
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_file.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_file.png)
 
 using wine to run the executable file we were asked to enter a username and a password
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_run.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_run.png)
 
 once a wrong password is entered the program simply exits
 
 let's try running the Linux command `strings` on the file and see if we could get the password:
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_strings.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_strings.png)
 
 we were greeted with large chunks of text and blobs of data nothing interesting to use
 
@@ -359,23 +359,23 @@ the above assembly compares the input username and password with the one stored 
 
 A more illustrative explaination 
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang.png)
 
 we try entering the password into the program but the program just simply exits, i thinker for a little and thought why the password isn't working, then i realize that the username is actually  `admin` and not `imda` this is because we are dealing with an x86 executable and the strings are written in little-endian ; note that when a small local string is used for comparison only, no StringHeader structure gets allocated. The string comparison is done directly by machine instructions; for example, CMP [EAX], 0x64636261 to compare with “abcd” on x86
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_pass.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_pass.png)
 
 we were greeted with a text, the text probably looks like latin so let's try translating it to english
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_trans.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_trans.png)
 
 it says we could only use the `ls` command in the panel, after writing the command a txt file with a decimal number name was printed out
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_ls.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_ls.png)
 
 we try deciphering the file name to Ascii characters in python and i got these:
 
-![](https://Cyberguru1.github.io/posts/crackme/images/golang_flag.png)
+![](https://blog.cyb3rguru.tech/posts/crackme/images/golang_flag.png)
 
 And we finally got our flag to be `flag{S1mple_g0l4ng_b1n4ry}`
 

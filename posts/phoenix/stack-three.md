@@ -1,7 +1,7 @@
 ## Stack-Three
 
 
-![](https://Cyberguru1.github.io/posts/phoenix/files/st3_header.png)
+![](https://blog.cyb3rguru.tech/posts/phoenix/files/st3_header.png)
 
 ### Source Code
 ---
@@ -74,7 +74,7 @@ If the `fp` function pointer is still `NULL`, a message is printed indicating th
 
 The goal of the challenge is to change the value of the fp pointer to the address of the complete_level function, using GDB we could extract the address of the function
 
-![](https://Cyberguru1.github.io/posts/phoenix/files/st3_f-address.png)
+![](https://blog.cyb3rguru.tech/posts/phoenix/files/st3_f-address.png)
 
 the function address is `0x40069d`
 
@@ -103,6 +103,6 @@ print(p.recv(1024))
 ```
 running the script we got:
 
-![](https://Cyberguru1.github.io/posts/phoenix/files/st3_result.png)
+![](https://blog.cyb3rguru.tech/posts/phoenix/files/st3_result.png)
 
 And viola!! Our complete_level function is called.

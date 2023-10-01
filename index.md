@@ -14,10 +14,10 @@ title: Home
 
 <hr>
 
-- [ [2023 Mar, 28]  PICO CTF 2023  ](https://Cyberguru1.github.io/posts/CTF/pico_CTF_2023.html)
-- [ [2022 Nov, 15]  Nahamcon CTF  ](https://Cyberguru1.github.io/posts/CTF/Nahamcon-EU_2022.html)
-- [ [2022 Oct, 19]  WICTF  ](https://Cyberguru1.github.io/posts/CTF/WICTF.html)
-- [ [2022 Sept, 22] Meta CTF 2022  ](https://Cyberguru1.github.io/posts/CTF/MetaCTF_Perplexing_python.html)
+- [ [2023 Mar, 28]  PICO CTF 2023  ](https://blog.cyb3rguru.tech/posts/CTF/pico_CTF_2023.html)
+- [ [2022 Nov, 15]  Nahamcon CTF  ](https://blog.cyb3rguru.tech/posts/CTF/Nahamcon-EU_2022.html)
+- [ [2022 Oct, 19]  WICTF  ](https://blog.cyb3rguru.tech/posts/CTF/WICTF.html)
+- [ [2022 Sept, 22] Meta CTF 2022  ](https://blog.cyb3rguru.tech/posts/CTF/MetaCTF_Perplexing_python.html)
 
 ---
 
@@ -34,10 +34,10 @@ _This are simple programms writen in different languages and logics which you co
 <hr>
 ---
 
-- [ [2023 May, 17] EasyCrackMe ](https://Cyberguru1.github.io/posts/crackme/EasyCrackMe.html)
-- [ [2023 May, 18] GDB Basics 😄](https://Cyberguru1.github.io/posts/crackme/GDBBasics.html)
-- [ [2023 May, 20] Sha256 = Secure ?](https://Cyberguru1.github.io/posts/crackme/Sha256.html)
-- [ [2023 May, 20] G0l4ng_15_C00L ](https://Cyberguru1.github.io/posts/crackme/golang_is_cool.html)
+- [ [2023 May, 17] EasyCrackMe ](https://blog.cyb3rguru.tech/posts/crackme/EasyCrackMe.html)
+- [ [2023 May, 18] GDB Basics 😄](https://blog.cyb3rguru.tech/posts/crackme/GDBBasics.html)
+- [ [2023 May, 20] Sha256 = Secure ?](https://blog.cyb3rguru.tech/posts/crackme/Sha256.html)
+- [ [2023 May, 20] G0l4ng_15_C00L ](https://blog.cyb3rguru.tech/posts/crackme/golang_is_cool.html)
 
 ---
 
@@ -57,15 +57,15 @@ _This categories of challenges introduced me to memory corruption, modification,
 
 ---
 
-- [ [2023 jun, 4] Stack-Zero ](https://Cyberguru1.github.io/posts/phoenix/Stack-zero.html)
-- [ [2023 jun, 5] Stack-One ](https://Cyberguru1.github.io/posts/phoenix/stack-one.html)
-- [ [2023 jun, 5] Stack-Two ](https://Cyberguru1.github.io/posts/phoenix/stack-two.html)
-- [ [2023 jun, 5] Stack-Three ](https://Cyberguru1.github.io/posts/phoenix/stack-three.html)
-- [ [2023 jun, 5] Stack-Four ](https://Cyberguru1.github.io/posts/phoenix/stack-four.html)
+- [ [2023 jun, 4] Stack-Zero ](https://blog.cyb3rguru.tech/posts/phoenix/Stack-zero.html)
+- [ [2023 jun, 5] Stack-One ](https://blog.cyb3rguru.tech/posts/phoenix/stack-one.html)
+- [ [2023 jun, 5] Stack-Two ](https://blog.cyb3rguru.tech/posts/phoenix/stack-two.html)
+- [ [2023 jun, 5] Stack-Three ](https://blog.cyb3rguru.tech/posts/phoenix/stack-three.html)
+- [ [2023 jun, 5] Stack-Four ](https://blog.cyb3rguru.tech/posts/phoenix/stack-four.html)
 
 ---
 
-- [ [2021 Mar, 5] PoP-Twice ](https://Cyberguru1.github.io/posts/phoenix/pop-twice.html)
+- [ [2021 Mar, 5] PoP-Twice ](https://blog.cyb3rguru.tech/posts/phoenix/pop-twice.html)
 
 ---
 
@@ -76,8 +76,8 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
 <hr>
 <hr>
 
-- [ [2023 May, 18] Pandoras Box Level 1](https://Cyberguru1.github.io/posts/VulnHub/pandoras_box.html)
-- [ [2023 May, 23] Pandoras Box Level 2](https://Cyberguru1.github.io/posts/VulnHub/pandoras_box_v2.html)
+- [ [2023 May, 18] Pandoras Box Level 1](https://blog.cyb3rguru.tech/posts/VulnHub/pandoras_box.html)
+- [ [2023 May, 23] Pandoras Box Level 2](https://blog.cyb3rguru.tech/posts/VulnHub/pandoras_box_v2.html)
 
 ---
 
@@ -85,7 +85,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
 <hr>
 
 
-- [ [2023 Jul, 22]  SQLi LABS ](https://Cyberguru1.github.io/posts/portswigger/SQL/sql.html)
+- [ [2023 Jul, 22]  SQLi LABS ](https://blog.cyb3rguru.tech/posts/portswigger/SQL/sql.html)
     - [lab sql injection vulnerability in where clause allowing retrieval of hidden data](https://blog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-vulnerability-in-where-clause-allowing-retrieval-of-hidden-data)
     - [lab sql injection vulnerability allowing login bypass](https://blog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-vulnerability-allowing-login-bypass)
     - [lab sql injection attack querying the database type and version on oracle](https://blog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-attack-querying-the-database-type-and-version-on-oracle)
@@ -106,7 +106,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab sql injection with filter bypass via xml encoding](https://blog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-with-filter-bypass-via-xml-encoding)
 
 ---
-- [ [2023 Aug, 20]  Access Control Labs ](https://Cyberguru1.github.io/posts/portswigger/SQL/access_control/acc.html)
+- [ [2023 Aug, 20]  Access Control Labs ](https://blog.cyb3rguru.tech/posts/portswigger/SQL/access_control/acc.html)
     - [lab-unprotected-admin-functionality](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality)
     - [lab-unprotected-admin-functionality-with-unpredictable-url](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality-with-unpredictable-url)
     - [lab-user-role-controlled-by-request-parameter](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-role-controlled-by-request-parameter)
@@ -139,7 +139,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab-file-path-traversal-validation-of-file-extension-with-null-byte-bypass](https://blog.cyb3rguru.tech/posts/portswigger/dir_trav/dirtrave2.html#lab-file-path-traversal-validation-of-file-extension-with-null-byte-bypass)
 
 
-- [ [2023 Aug, 5]  XSS LABS  ](https://Cyberguru1.github.io/posts/portswigger/XSS/xss.html)
+- [ [2023 Aug, 5]  XSS LABS  ](https://blog.cyb3rguru.tech/posts/portswigger/XSS/xss.html)
 
 ---
 
