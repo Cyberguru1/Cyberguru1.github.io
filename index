@@ -105,7 +105,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab blind sql injection with out of band data exfiltration](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
     - [lab sql injection with filter bypass via xml encoding](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-with-filter-bypass-via-xml-encoding)
 
-
+---
 - [ [2023 Aug, 20]  Access Control Labs ](https://Cyberguru1.github.io/posts/portswigger/SQL/access_control/acc.html)
     - [lab-unprotected-admin-functionality](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality)
     - [lab-unprotected-admin-functionality-with-unpredictable-url](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality-with-unpredictable-url)
@@ -121,7 +121,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab-multi-step-process-with-no-access-control-on-one-step](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-multi-step-process-with-no-access-control-on-one-step)
     - [lab-referer-based-access-control](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-referer-based-access-control)
 
-
+---
 - [[ 2023 Aug, 26] Command Injection Attack Labs](https://vlog.cyb3rguru.tech/posts/portswigger/CMD/cmd.html)
     - [lab-os-command-injection-simple-case](https://vlog.cyb3rguru.tech/posts/portswigger/CMD/cmd.html#lab-os-command-injection-simple-case)
     - [lab-blind-os-command-injection-with-time-delays](https://vlog.cyb3rguru.tech/posts/portswigger/CMD/cmd.html#lab-blind-os-command-injection-with-time-delays)
@@ -129,7 +129,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab-blind-os-command-injection-with-out-of-band-interaction](https://vlog.cyb3rguru.tech/posts/portswigger/CMD/cmd.html#lab-blind-os-command-injection-with-out-of-band-interaction)
     - [lab-blind-os-command-injection-with-out-of-band-data-exfiltration](https://vlog.cyb3rguru.tech/posts/portswigger/CMD/cmd.html#lab-blind-os-command-injection-with-out-of-band-data-exfiltration)
 
-
+---
  - [ [ 2023 Aug, 28] Directory Traversal Attacks Labs](https://vlog.cyb3rguru.tech/posts/portswigger/dir_trav/dirtrave2.html)
     - [lab-file-path-traversal-simple-case](https://vlog.cyb3rguru.tech/posts/portswigger/dir_trav/dirtrave2.html#lab-file-path-traversal-simple-case)
     - [lab-file-path-traversal-traversal-sequences-blocked-with-absolute-path-bypass](https://vlog.cyb3rguru.tech/posts/portswigger/dir_trav/dirtrave2.html#lab-file-path-traversal-traversal-sequences-blocked-with-absolute-path-bypass)
@@ -157,7 +157,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [sql-injection-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/SQLI/sql.html#sql-injection-05)
     - [sql-injection-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/SQLI/sql.html#sql-injection-06)
 
-
+---
 - [ [2023 jul, 29] Authorization Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.htm)
     - [authorization-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-01)
     - [authorization-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-02)
@@ -166,7 +166,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [solving-authorization-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#solving-authorization-05)
     - [authorization-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-06)
 
-
+---
 - [ [2023 Sept, 20] Android Lab ](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html)
     - [android-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-01)
     - [android-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-02)
@@ -177,7 +177,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [android-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-07)
     - [android-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-08)
 
-
+---
 - [[2023 Sept, 24] API Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html)
     - [api-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-01)
     - [api-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-02)
@@ -188,7 +188,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [solving-api-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#solving-api-07)
     - [api-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-08)
 
-
+---
 - [ [2023 Sept, 24] API Payments Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html)
     - [api-payments-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-01)
     - [api-payments-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-02)
@@ -198,7 +198,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [api-payments-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-06)
     - [api-payments-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-07)
 
-
+---
 - [ [2023 Sept, 25] Remote Code Execution Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html)
     - [code-execution-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-01)
     - [code-execution-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-02)
@@ -213,19 +213,18 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [command-execution-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#command-execution-02)
     - [command-execution-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#command-execution-03)
 
-
-
+---
 - [ [2023 Sept, 28] Directory Traversal Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html)
     - [directory-traversal-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html#directory-traversal-01)
     - [directory-traversal-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html#directory-traversal-02)
     - [directory-traversal-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html#directory-traversal-03)
     
-
+---
 - [ [2023 Sept, 29] Git Information Leak Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/git_leak/git.html)
     - [git-information-leak](https://vlog.cyb3rguru.tech/posts/pentesterlab/git_leak/git.html#git-information-leak)
     - [git-information-leak-ii](https://vlog.cyb3rguru.tech/posts/pentesterlab/git_leak/git.html#git-information-leak-ii)
 
-
+---
 - [ [2023 Sept, 30] RECON Lab](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html)
     - [recon-00](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-00)
     - [recon-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-01)
@@ -246,7 +245,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [recon-15](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-15)
     - [recon-16](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-16)
     - [recon-17](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-17)
-    - [recon-18-1](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-18-1)
+    - [recon-18](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-18-1)
     - [recon-19](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-19)
     - [recon-20](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-20)
     - [recon-21](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-21)
