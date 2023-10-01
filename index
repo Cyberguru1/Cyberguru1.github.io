@@ -139,11 +139,35 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab-file-path-traversal-validation-of-file-extension-with-null-byte-bypass](https://vlog.cyb3rguru.tech/posts/portswigger/dir_trav/dirtrave2.html#lab-file-path-traversal-validation-of-file-extension-with-null-byte-bypass)
 
 
-
 - [ [2023 Aug, 5]  XSS LABS  ](https://Cyberguru1.github.io/posts/portswigger/XSS/xss.html)
 
 ---
 
+---
+
+<h3 class="mume-header" id="pentester_labs">Pentester LABS</h3>
+<hr>
+
+
+- [authorization-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.htm)
+    - [authorization-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-01)
+    - [authorization-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-02)
+    - [authorization-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-03)
+    - [authorization-04](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-04)
+    - [solving-authorization-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#solving-authorization-05)
+    - [authorization-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-06)
+
+
+- [android-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html)
+    - [android-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-01)
+    - [android-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-02)
+    - [android-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-03)
+    - [android-04](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-04)
+    - [android-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-05)
+    - [android-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-06)
+    - [android-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-07)
+    - [android-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-08)
+---
 ---
 
 <h4 class="mume-header" id="contact">Support Or Get in touch with Me:</h4>
