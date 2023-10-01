@@ -1,4 +1,6 @@
 #!/usr/bin/python 
+
+# script for extracting header id and creating unique links
 import re
 import requests
 import sys
