@@ -167,6 +167,85 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [android-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-06)
     - [android-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-07)
     - [android-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/android/android.html#android-08)
+
+
+- [[2023 Sept,]](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html)
+    - [api-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-01)
+    - [api-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-02)
+    - [api-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-03)
+    - [api-04](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-04)
+    - [api-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-05)
+    - [api-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-06)
+    - [solving-api-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#solving-api-07)
+    - [api-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/api/api.html#api-08)
+
+
+- [api-payments-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html)
+    - [api-payments-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-01)
+    - [api-payments-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-02)
+    - [api-payments-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-03)
+    - [api-payments-04](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-04)
+    - [api-payments-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-05)
+    - [api-payments-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-06)
+    - [api-payments-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/api_payment/api_payment.html#api-payments-07)
+
+
+- [code-execution-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html)
+    - [code-execution-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-01)
+    - [code-execution-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-02)
+    - [code-execution-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-03)
+    - [code-execution-04](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-04)
+    - [code-execution-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-05)
+    - [code-execution-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-06)
+    - [code-execution-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-07)
+    - [code-execution-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-08)
+    - [code-execution-09](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#code-execution-09)
+    - [command-execution-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#command-execution-01)
+    - [command-execution-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#command-execution-02)
+    - [command-execution-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/cmd_pentesterlab/cmd.html#command-execution-03)
+
+
+- [directory-traversal-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html#directory-traversal-01)
+- [directory-traversal-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html#directory-traversal-02)
+- [directory-traversal-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/dir_tra/dirtrave.html#directory-traversal-03)
+
+
+- [git-information-leak](https://vlog.cyb3rguru.tech/posts/pentesterlab/git_leak/git.html#git-information-leak)
+- [git-information-leak-ii](https://vlog.cyb3rguru.tech/posts/pentesterlab/git_leak/git.html#git-information-leak-ii)
+
+
+- [recon-00](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-00)
+- [recon-01](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-01)
+- [recon-02](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-02)
+- [recon-03](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-03)
+- [recon-04](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-04)
+- [recon-05](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-05)
+- [recon-06](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-06)
+- [recon-07](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-07)
+- [recon-08](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-08)
+- [recon-09](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-09)
+- [recon-10](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-10)
+- [recon-11](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-11)
+- [recon-12](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-12)
+- [recon-13](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-13)
+- [recon-14](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-14)
+- [recon-18](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-18)
+- [recon-15](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-15)
+- [recon-16](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-16)
+- [recon-17](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-17)
+- [recon-18-1](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-18-1)
+- [recon-19](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-19)
+- [recon-20](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-20)
+- [recon-21](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-21)
+- [recon-22](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-22)
+- [recon-23](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-23)
+- [recon-24](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-24)
+- [recon-25](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-25)
+- [recon-26](https://vlog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-26)
+
+
+
+
 ---
 ---
 
