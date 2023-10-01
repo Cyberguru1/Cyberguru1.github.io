@@ -21,7 +21,7 @@ https://0a36005e034cede280fe3198000b00f4.web-security-academy.net/image?filename
 and we solved the lab:
 
 
-![1695712761088.png](./1695712761088.png)
+![1695712761088.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695712761088.png)
 
 
 
@@ -43,7 +43,7 @@ https://0ad1000e03af75ed84db10bf006600f6.web-security-academy.net/image?filename
 
 we use the absolute file path to access the etc/passd file and solved the lab:
 
-![1695715319507.png](./1695715319507.png)
+![1695715319507.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695715319507.png)
 
 
 
@@ -66,7 +66,7 @@ as you could see, we added `....//` at the beginning of each traversal, this is 
 
 sending this request solves the lab:
 
-![1695715831462.png](./1695715831462.png)
+![1695715831462.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695715831462.png)
 
 
 # Lab: [File path traversal](https://portswigger.net/web-security/file-path-traversal), traversal sequences stripped with superfluous URL-decode
@@ -90,21 +90,21 @@ we used the second option of encoding the traversal in this lab we use the follo
 
 this is simply the traversal payload we have been using in the previous lab url-encoded twice, decoding it twice gives us back the payload:
 
- ![1695716524822.png](./1695716524822.png)
+ ![1695716524822.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695716524822.png)
 
 
 
 we send this request in burp:
 
- ![1695716550939.png](./1695716550939.png)
+ ![1695716550939.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695716550939.png)
 
 and we got the following response:
 
- ![1695716595099.png](./1695716595099.png)
+ ![1695716595099.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695716595099.png)
 
 And we solved the lab:
 
- ![1695716627989.png](./1695716627989.png)
+ ![1695716627989.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695716627989.png)
 
 
 
@@ -125,7 +125,7 @@ https://0a0b004103a4630d803ed106005f00c2.web-security-academy.net/image?filename
 
 sending this request solves the lab:
 
- ![1695716925240.png](./1695716925240.png)
+ ![1695716925240.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695716925240.png)
 
 
 # Lab: [File path traversal](https://portswigger.net/web-security/file-path-traversal), validation of file extension with null byte bypass
@@ -144,7 +144,7 @@ https://0a2800b70336a269800ed0a20025001c.web-security-academy.net/image?filename
 
 sending this request solves the lab:
 
- ![1695717283024.png](./1695717283024.png)
+ ![1695717283024.png](https://Cyberguru1.github.io/posts/portswigger/dir_trav/images/1695717283024.png)
 
 
 

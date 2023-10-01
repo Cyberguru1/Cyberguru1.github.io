@@ -10,13 +10,13 @@ To solve the lab, execute the `whoami` command to determine the name of the curr
 
 We solve this lab by simply adding the `whoami` statement at the end of the request intercepted by burpsuite:
 
- ![1694080380146.png](./1694080380146.png)
+ ![1694080380146.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694080380146.png)
 
 
 
 and we get the following result:
 
- ![1694080715989.png](./1694080715989.png)
+ ![1694080715989.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694080715989.png)
 
 we could see in the above image that the user is peter-qeL7Tm
 
@@ -40,7 +40,7 @@ $(sleep 10)
 
 we send this request and get the following result:
 
- ![1694081527853.png](./1694081527853.png)
+ ![1694081527853.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694081527853.png)
 
 
 
@@ -61,17 +61,17 @@ To solve the lab, execute the `whoami` command and retrieve the output.
 
 We accessed the provided link and navigate to the feedback section and pass in the following entry:
 
- ![1694082346005.png](./1694082346005.png)
+ ![1694082346005.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694082346005.png)
 
 we use the `whoami`  command and send the output to /var/www/images/out.txt and sleep for 10 seconds so that we could know that our injection have been executed.
 
 we got the following result after sending the payload:
 
- ![1694082459319.png](./1694082459319.png)
+ ![1694082459319.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694082459319.png)
 
 
 
- ![1694082478405.png](./1694082478405.png)
+ ![1694082478405.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694082478405.png)
 
 
 
@@ -89,11 +89,11 @@ To solve this lab, we simply do what we did in lab 3, we ping our burp collabora
 
 supplied input to the query:
 
- ![1694084751784.png](./1694084751784.png)
+ ![1694084751784.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694084751784.png)
 
 Result of the query:
 
-![1694084696677.png](./1694084696677.png)
+![1694084696677.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694084696677.png)
 
 
 
@@ -112,11 +112,11 @@ This lab is simillar to the previous challenge we solved it using the same appro
 
 we got this result from burp collaborator client:
 
-![1694085270763.png](./1694085270763.png)
+![1694085270763.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694085270763.png)
 
 
 we then submit the result:
 
-![1694085235822.png](./1694085235822.png)
+![1694085235822.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694085235822.png)
 
- ![1694085394662.png](./1694085394662.png)
+ ![1694085394662.png](https://Cyberguru1.github.io/posts/portswigger/CMD/images/1694085394662.png)
