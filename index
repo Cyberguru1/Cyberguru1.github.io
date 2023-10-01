@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-### Welcome to My Cyber Security Blog, where i talk about Solution to Challenges in CTF's I played
+### Welcome to My Cyber Security Blog, where i talk about Solution to Challenges in CTF's I played and Labs solved
 
 ---
 
@@ -11,7 +11,7 @@ title: Home
 ---
 
 <h3 class="mume-header" id="ctf">CTFs:</h3>
-_CTF is a game designed to let you learn to hack in a safe, rewarding environment. CTF is a free educational games for hackers_
+
 <hr>
 
 - [ [2023 Mar, 28]  PICO CTF 2023  ](https://Cyberguru1.github.io/posts/CTF/pico_CTF_2023.html)
@@ -24,8 +24,6 @@ _CTF is a game designed to let you learn to hack in a safe, rewarding environmen
 ---
 
 <h3 class="mume-header" id="reveng">Reverse Engineering:</h3>
-
-_Reverse Engineering in a CTF is typically the process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format. Very often the goal of a reverse engineering challenge is to understand the functionality of a given program such that you can identify deeper issues._
 
 <hr>
 
@@ -105,6 +103,21 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab blind sql injection with out of band interaction](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-out-of-band-interaction)
     - [lab blind sql injection with out of band data exfiltration](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
     - [lab sql injection with filter bypass via xml encoding](https://vlog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-with-filter-bypass-via-xml-encoding)
+
+- [ [2023 Aug, 20]  Access Control Labs ](https://Cyberguru1.github.io/posts/portswigger/SQL/access_control/acc.html)
+    - [lab-unprotected-admin-functionality](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality
+    - [lab-unprotected-admin-functionality-with-unpredictable-url](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality-with-unpredictable-url
+    - [lab-user-role-controlled-by-request-parameter](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-role-controlled-by-request-parameter
+    - [lab-user-role-can-be-modified-in-user-profile](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-role-can-be-modified-in-user-profile
+    - [lab-user-id-controlled-by-request-parameter](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-id-controlled-by-request-parameter
+    - [lab-user-id-controlled-by-request-parameter-with-unpredictable-user-ids](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-id-controlled-by-request-parameter-with-unpredictable-user-ids
+    - [lab-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect
+    - [lab-user-id-controlled-by-request-parameter-with-password-disclosure](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-id-controlled-by-request-parameter-with-password-disclosure
+    - [lab-insecure-direct-object-references](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-insecure-direct-object-references
+    - [lab-url-based-access-control-can-be-circumvented](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-url-based-access-control-can-be-circumvented
+    - [lab-method-based-access-control-can-be-circumvented](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-method-based-access-control-can-be-circumvented
+    - [lab-multi-step-process-with-no-access-control-on-one-step](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-multi-step-process-with-no-access-control-on-one-step
+    - [lab-referer-based-access-control](https://vlog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-referer-based-access-control
 
 - [ [2023 Aug, 5]  XSS LABS  ](https://Cyberguru1.github.io/posts/portswigger/XSS/xss.html)
 
