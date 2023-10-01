@@ -13,8 +13,8 @@ if match:
     id_content = match
 
     for i in id_content:
-        print(f"- [{i}]({url}#{i}")
-    
+        print(f"- [{i}]({url}#{i})")
+    print("\n\n")
     for i in id_content:
         print(f"{url}#{i}")
 
