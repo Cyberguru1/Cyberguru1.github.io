@@ -106,7 +106,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [lab sql injection with filter bypass via xml encoding](https://blog.cyb3rguru.tech/posts/portswigger/SQL/sql.html#lab-sql-injection-with-filter-bypass-via-xml-encoding)
 
 ---
-- [ [2023 Aug, 20]  Access Control Labs ](https://blog.cyb3rguru.tech/posts/portswigger/SQL/access_control/acc.html)
+- [ [2023 Aug, 20]  Access Control Labs ](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html)
     - [lab-unprotected-admin-functionality](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality)
     - [lab-unprotected-admin-functionality-with-unpredictable-url](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-unprotected-admin-functionality-with-unpredictable-url)
     - [lab-user-role-controlled-by-request-parameter](https://blog.cyb3rguru.tech/posts/portswigger/access_control/acc.html#lab-user-role-controlled-by-request-parameter)
