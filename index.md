@@ -158,7 +158,7 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [sql-injection-06](https://blog.cyb3rguru.tech/posts/pentesterlab/SQLI/sql.html#sql-injection-06)
 
 ---
-- [ [2023 jul, 29] Authorization Lab](https://blog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.htm)
+- [ [2023 jul, 29] Authorization Lab](https://blog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html)
     - [authorization-01](https://blog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-01)
     - [authorization-02](https://blog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-02)
     - [authorization-03](https://blog.cyb3rguru.tech/posts/pentesterlab/access_control/acc.html#authorization-03)
