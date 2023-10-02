@@ -1,6 +1,6 @@
 #!/usr/bin/python 
 
-# script for extracting header id and creating unique links
+# script for extracting header id and creating unique links for eahc posts
 import re
 import requests
 import sys
