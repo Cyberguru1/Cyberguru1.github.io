@@ -3,6 +3,12 @@ show_downloads: false
 show_repo: false
 theme: jekyll-theme-hacker
 
+description: "Hamza's Blog"
+author:
+  name: "cyb3guru"
+  email: "hamzasaidu34@gmail.com"
+  url: "https://blog.cyb3guru.tech"
+
 gems:
   - jekyll-sitemap
 
