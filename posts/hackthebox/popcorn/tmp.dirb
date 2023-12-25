@@ -1,0 +1,27 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: tmp.dirb
+START_TIME: Mon Oct  9 13:44:41 2023
+URL_BASE: http://10.129.92.90/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.129.92.90/ ----
++ http://10.129.92.90/cgi-bin/ (CODE:403|SIZE:288)
++ http://10.129.92.90/index (CODE:200|SIZE:177)
++ http://10.129.92.90/index.html (CODE:200|SIZE:177)
++ http://10.129.92.90/server-status (CODE:403|SIZE:293)
++ http://10.129.92.90/test (CODE:200|SIZE:47348)
+==> DIRECTORY: http://10.129.92.90/torrent/
+
+-----------------
+END_TIME: Mon Oct  9 14:01:41 2023
+DOWNLOADED: 4612 - FOUND: 5
