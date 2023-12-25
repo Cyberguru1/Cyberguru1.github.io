@@ -256,6 +256,11 @@ _VulnHub was born to cover as many as possible, creating a catalogue of 'stuff' 
     - [recon-26](https://blog.cyb3rguru.tech/posts/pentesterlab/recon/recon.html#recon-26)
 
 
+
+<h3 class="mume-header" id="hackthebox">Hacktheb0x:</h3>
+
+- [ [2023 oct, 14] PopCorn -LFI-](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/popcorn.html)
+
 ---
 ---
 
