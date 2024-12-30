@@ -6,7 +6,7 @@
 
 ---
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando_site.png)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando_site.png)
 ---------------------------------------------------------------------
 
 About:
@@ -18,29 +18,29 @@ Some levels come with a README file which you should read.
 
 This is the first level of the challenge, an OVA file is provided in the challenge [link](https://www.vulnhub.com/entry/pandoras-box-1,111/) booting up the ova file in to VM ware player we have
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando.gif)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando.gif)
 
 after booting up the box, we are left with a prompt to enter username and password, we tried some random guesses with no avail
 well this a boot-to-root challenge my first of a kind that has to do with a combination of reveng and binary exploitation, knowing this
 let's try and search for the machines IP address and scan for open ports
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando_ip.png)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando_ip.png)
 
 Using the command `arp -a` we were able to get the machine IP address that I configured the network adapter binded to vmnet1 which we confirmed by comparing the shown macadress with the machine's ip address.
 
 using this ip address let's scan the machine using NMAP we have :
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando_service_scan.png)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando_service_scan.png)
 
 we use the NMAP command `sudo nmap -sV -SN -sC 192.168.17.129`, and we got some results, an open port to SSH on port 22/TCP, let's try a deeper scan to scan all port using the `-p-` args to the command we have::
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando_all_scan.png)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando_all_scan.png)
 
 doing so we were able to get an additional open port running on port 54311 with service Nagios NSCA
 
 let's try connecting to it using netcat we have ::
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando_login_lvl1.png)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando_login_lvl1.png)
 
 we could see a password prompt asking us for a password, we try some random string with no luck, and then I went to google to do some reconnaissance on possible vulnerabilities for Nagios logging
 
@@ -96,7 +96,7 @@ while not done:
 		done = True
 ```
 
-full script [here](https://blog.cyb3rguru.tech/posts/VulnHub/images/script.py)
+full script [here](https://cyberguru1.github.io/posts/VulnHub/images/script.py)
 
 Here's a breakdown of the code:
 
@@ -112,17 +112,17 @@ Here's a breakdown of the code:
 
 After running the code for a while we have:
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub/images/pando_lvl1_flag.gif)
+![](https://cyberguru1.github.io/posts/VulnHub/images/pando_lvl1_flag.gif)
 
 <p><h5>Running the script</h5></p>
 
 This the final password:
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pando_lvl1_flag.png)
+![](https://cyberguru1.github.io/posts/VulnHub//images/pando_lvl1_flag.png)
 
 we got the password as `R3sp3ctY04r4dm1niSt4t0rL1keYo4R3spectY04rG0d`, using this to login we have
 
-![](https://blog.cyb3rguru.tech/posts/VulnHub//images/pando_lvl1_sucess.png)
+![](https://cyberguru1.github.io/posts/VulnHub//images/pando_lvl1_sucess.png)
 
 And boooom!!!
 

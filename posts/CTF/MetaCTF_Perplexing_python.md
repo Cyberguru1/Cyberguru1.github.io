@@ -3,16 +3,16 @@
 
 This challenge is from MetaCTF 2022, the challenge literally had zero solves till the CTF ended, so i decided to go back to the challenge, a zip file was given:
 
-![](https://blog.cyb3rguru.tech/posts/CTF/files/1688632861897.png)
+![](https://cyberguru1.github.io/posts/CTF/files/1688632861897.png)
 
 unziping the zip file we saw two python files:
 
-![](https://blog.cyb3rguru.tech/posts/CTF/files/1688632899815.png)
+![](https://cyberguru1.github.io/posts/CTF/files/1688632899815.png)
 
 
 content of main.py :
 
-![](https://blog.cyb3rguru.tech/posts/CTF/files/1688632958188.png)
+![](https://cyberguru1.github.io/posts/CTF/files/1688632958188.png)
 
 from the content of the main.py we could see that the program ask us for a password and verify it by passing it to `verify_password` function
 
@@ -20,17 +20,17 @@ if the password is wrong it print's some dangerous statement that everyone fears
 
 running the main.py file we have:
 
- ![](https://blog.cyb3rguru.tech/posts/CTF/files/1688636213097.png)
+ ![](https://cyberguru1.github.io/posts/CTF/files/1688636213097.png)
 
 we could see the impact of inputing wrong password with only 3 attempts....
 
 content of auth.py :
 
- ![](https://blog.cyb3rguru.tech/posts/CTF/files/1688633003608.png)
+ ![](https://cyberguru1.github.io/posts/CTF/files/1688633003608.png)
 
 we could see the content of auth.py has some base encoded text, de-encoding it we have:
 
-![](https://blog.cyb3rguru.tech/posts/CTF/files/1688633121815.png)
+![](https://cyberguru1.github.io/posts/CTF/files/1688633121815.png)
 
 let's break down the functions:
 
@@ -108,7 +108,7 @@ The last function emulates the `range ` function in python but returns only `[2,
 
 From the Last operation in the `verify_password` function we could use the `crt` list to compute the value of `n` , from the Concept of Chinese Remainder Theorem which state a number can be represented in linear congurence by it's remainder and modulos, using the CRT algorithm we got `n` as :
 
-![](https://blog.cyb3rguru.tech/posts/CTF/files/1688646355405.png)
+![](https://cyberguru1.github.io/posts/CTF/files/1688646355405.png)
 
 using `n` we could recover `pwd` with the help of `t` we could compute t from
 
@@ -227,7 +227,7 @@ print(''.join([chr(x) for x in flag]))
 
 Running the script we have our `pwd`/`flag` :
 
- ![](https://blog.cyb3rguru.tech/posts/CTF/files/1688647404643.png)
+ ![](https://cyberguru1.github.io/posts/CTF/files/1688647404643.png)
 
 **this_virus_works_in_every_os_except_suicide_linux**
 

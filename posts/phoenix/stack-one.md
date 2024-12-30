@@ -1,6 +1,6 @@
 ## Stack-one
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st1_header.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st1_header.png)
 
 
 ### Source Code
@@ -139,5 +139,5 @@ print(p.recvall().decode())
 
 And finally running the script we have:
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st1_result.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st1_result.png)
 

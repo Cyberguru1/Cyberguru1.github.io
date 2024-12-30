@@ -1,6 +1,6 @@
 ## 1. Padlock (Rev)
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/padlock.png)
+![](https://cyberguru1.github.io/posts/CTF/images/padlock.png)
 
 This is the first and easy reverse engineering challenge, running the [file](iles/padlock) we have a prompt asking for key input
 
@@ -83,17 +83,17 @@ As we could see from the main function, our input is collected from stdin and se
 after that, it goes on to compare the processed input with the string "master locks arent vry strong are they"
 to solve it we simply reverse the comparision string according to the assembly flow doing that we have the flag
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/flag_padlock.png)
+![](https://cyberguru1.github.io/posts/CTF/images/flag_padlock.png)
 
 flag{264cec034faef71c642de1721ea26b1f}
 
 ## 2. Rick (rev)
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/rick.png)
+![](https://cyberguru1.github.io/posts/CTF/images/rick.png)
 
-This is the second reverse engineering challenge we were given two files a stripped elf 64-bit binary [program](https://blog.cyb3rguru.tech/posts/CTF/files/program) and a encrypted [cipher](https://blog.cyb3rguru.tech/posts/CTF/files/ct.enc) text, running the program we have this output
+This is the second reverse engineering challenge we were given two files a stripped elf 64-bit binary [program](https://cyberguru1.github.io/posts/CTF/files/program) and a encrypted [cipher](https://cyberguru1.github.io/posts/CTF/files/ct.enc) text, running the program we have this output
 
-![pic1](https://blog.cyb3rguru.tech/posts/CTF/images/program1.png)
+![pic1](https://cyberguru1.github.io/posts/CTF/images/program1.png)
 
 the program seems to be looking for a flag.txt file, lets decompile the program with ghidra
 
@@ -190,7 +190,7 @@ void FUN_00101539(void)
 
 ```
 
-the function simply creates a key of size 16 byte and stores it in DAT_0014030, so all our parameters of IV and KEY is available we could reimplement thesame function in c++ and decrypt the cipher text. full code [here](https://blog.cyb3rguru.tech/posts/CTF/files/rick.cpp)
+the function simply creates a key of size 16 byte and stores it in DAT_0014030, so all our parameters of IV and KEY is available we could reimplement thesame function in c++ and decrypt the cipher text. full code [here](https://cyberguru1.github.io/posts/CTF/files/rick.cpp)
 
 ```
 
@@ -229,41 +229,41 @@ the function simply creates a key of size 16 byte and stores it in DAT_0014030, 
 
 compiling the program with `g++ rick.cpp -lcrypto -lssl` and running it we have our flag as:
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/flagrick_.png)
+![](https://cyberguru1.github.io/posts/CTF/images/flagrick_.png)
 
 flag{6265a883a2d001d4fe291277bb171bac}
 
 ## 3. Got Any Games? (Andriod)
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/games.png)
+![](https://cyberguru1.github.io/posts/CTF/images/games.png)
 
 This an andriod challenge, two files where given in the task, a SaveFile.sav file and GotAnyGames.apk file, according to the hint it says its a guessing game for andriod, which implements an advanced militrary grade encryption to deter cheaters.
 
 opening the SaveFile.sav file, we saw some giberrish texts, probably some encrypted stuff
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/save.png)
+![](https://cyberguru1.github.io/posts/CTF/images/save.png)
 
 well its an andriod task time to use the apktool to decompile it, this are the content of the apk file
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/apktool.png)
+![](https://cyberguru1.github.io/posts/CTF/images/apktool.png)
 
 after decompiling it i converted the classes.dex file to classes.jar file using the dex2jar program
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/jar.png)
+![](https://cyberguru1.github.io/posts/CTF/images/jar.png)
 
 and finally we got our jar file we could load to java decompiler JD-GUI, i didn't bother installing the apkfile on an andriod emulator just went on too decompile it and started searching around talk about being cozzy xd :)
 
 these our classes file loaded in jd-gui
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/jdgui.png)
+![](https://cyberguru1.github.io/posts/CTF/images/jdgui.png)
 
 searching through and playing around, firsting i searached for was how the "SaveFile.sav" file was created, thereby narrowing my search to some class files, from the search result i saw the string ".sav" was mentioned in three classes
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/clas.png)
+![](https://cyberguru1.github.io/posts/CTF/images/clas.png)
 
 took each class one by one and analyze them,
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/gamestate.png)
+![](https://cyberguru1.github.io/posts/CTF/images/gamestate.png)
 
 so basically the PLayGame.class file loads up a file with an extension of ".sav" to read the contents which is then used to initialize the gamestate used for playing the guessing game and also save the gamestate with same extension
 
@@ -292,7 +292,7 @@ analyzing further we could see a call was made to a function called `encryptSave
 
 Finding the IV and KEY
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/keyr.png)
+![](https://cyberguru1.github.io/posts/CTF/images/keyr.png)
 
 a specific function is responsible in generating the key, reimplementing this function in python we got the key to be
 
@@ -300,7 +300,7 @@ a specific function is responsible in generating the key, reimplementing this fu
 
 Finding the IV
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/decrypt.png)
+![](https://cyberguru1.github.io/posts/CTF/images/decrypt.png)
 
 i realized that from the LoadGameActivity.class the class responsible for loading the gameState from the ".sav" file extension we could see that their is a function called String decrypt that uses the first 16 byte of the ".sav" file extension as our IV and the remainning as our cipher text this means that the IV and Cipher text was stored in the same file.
 
@@ -324,7 +324,7 @@ print(mess)
 
 running it we got our flag
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/apkflag.png)
+![](https://cyberguru1.github.io/posts/CTF/images/apkflag.png)
 
 flag{38002abd05c651c83e1d4c0177a8eaca}
 
@@ -332,9 +332,9 @@ flag{38002abd05c651c83e1d4c0177a8eaca}
 
 This is my most favourite challenge as it as to do with scripting, the main task of the challenge was to connect to a web link that as an image, the image contains a math question to be solved and a mini box were the solution should be submited, this a sample below
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/math.png)
+![](https://cyberguru1.github.io/posts/CTF/images/math.png)
 
-so i utilize a python module called pytesseract (it's an OCR tool implemented in python ) and urllib to get the work done. This a sample code full code [here](https://blog.cyb3rguru.tech/posts/CTF/scripts/math_smasher.py), after some time we got our flag.
+so i utilize a python module called pytesseract (it's an OCR tool implemented in python ) and urllib to get the work done. This a sample code full code [here](https://cyberguru1.github.io/posts/CTF/scripts/math_smasher.py), after some time we got our flag.
 
 ```
 pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"

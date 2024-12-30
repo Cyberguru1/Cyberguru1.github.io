@@ -10,17 +10,17 @@ the application to display one or more unreleased products.
 
 Accessing the lab we have a shopping site with the following content;
 
-![1689749587534.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689749587534.png)
+![1689749587534.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689749587534.png)
 
 We then intercept the request using burpsuite and change the highligted parameter:
 
-![1689749687720.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689749687720.png)to:
+![1689749687720.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689749687720.png)to:
 
-![1689749949909.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689749949909.png)
+![1689749949909.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689749949909.png)
 
 Forwarding the modified request we get all the items in the shop:
 
-![1689750043879.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689750043879.png)
+![1689750043879.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689750043879.png)
 
 
 
@@ -32,15 +32,15 @@ To solve the lab, perform a SQL injection attack that logs in to the application
 
 Accessing the Lab environment, we click on `My account` and trying to log in we get this:
 
-![1689750403275.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689750403275.png)
+![1689750403275.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689750403275.png)
 
 we use the `admistrator` as username and attach a clause that skips checking the password to it, then for the password feild we could just put in gibberish:
 
-![1689750489548.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689750489548.png)
+![1689750489548.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689750489548.png)
 
 we click on the `Log in ` and we get the update email feild signifying that we successfully logged in:
 
-![1689750564236.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689750564236.png)
+![1689750564236.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689750564236.png)
 
 
 
@@ -54,15 +54,15 @@ To solve the lab, display the database version string.
 
 After accessing the Lab enviroment, we click on the categories section and intercept the request using burpsuite, we then add the union statement to execute an aditional SELECT Statement immediately after the filter statement has been executed, in the challenge description, it was stated that the database server is oracle so by default every oracle database comes with a column field called BANNER in a table called version:
 
-![1689767564844.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689767564844.png)
+![1689767564844.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689767564844.png)
 
 so we fetch the contents using the SELECT statement:
 
-![1689767329172.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689767329172.png)
+![1689767329172.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689767329172.png)
 
 forwarding the requset we get our expected result:
 
-![1689767678322.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689767678322.png)
+![1689767678322.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689767678322.png)
 
 
 
@@ -83,11 +83,11 @@ SELECT @@version;
 
 Knowing this we could use burp to intercept the request and modify the query as done in the previous task:
 
-![1689768783101.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689768783101.png)
+![1689768783101.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689768783101.png)
 
 forwarding the request we have :
 
-![1689768884477.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689768884477.png)
+![1689768884477.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689768884477.png)
 
 
 
@@ -105,17 +105,17 @@ To solve the lab, log in as the `administrator` user
 
 Simillar to the other challenges we access the Lab environment then click on a categories section then intercept the request using burp, the first step as outlined in the challenge description is to find the name of tables in the database and the columns it contains, after a bit of googling we could query `table_names `  from `information_schema.tables`  and list out all the availabe tables.
 
-![1689773460904.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689773460904.png)
+![1689773460904.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689773460904.png)
 
 i use only the higlited part
 
 Adding this to our request header we have:
 
-![1689772041799.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689772041799.png)
+![1689772041799.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689772041799.png)
 
 The Response:
 
-![1689772075022.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689772075022.png)
+![1689772075022.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689772075022.png)
 
 we then search a table that has to do with users among all the entry we got outputs like:
 
@@ -137,11 +137,11 @@ we got a good result with `users_eeuuer` table name
 
 Request Header:
 
-![1689771933133.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689771933133.png)
+![1689771933133.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689771933133.png)
 
 Response:
 
-![1689771964480.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689771964480.png)
+![1689771964480.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689771964480.png)
 
 From the response we could see that there's two columns named `username_uvanwt` an `password_crcmmd` in the `users_eeuuer` table
 
@@ -153,17 +153,17 @@ SELECT username_uvanwt, password_crcmmd FROM users_eeuuer;
 
 Modified request:
 
-![1689772254187.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689772254187.png)
+![1689772254187.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689772254187.png)
 
 Response:
 
-![1689772282714.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689772282714.png)
+![1689772282714.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689772282714.png)
 
 From the above response we have obtained our usernames and passwords
 
 we then use the administrator password to login as admin:
 
-![1689772400154.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689772400154.png)
+![1689772400154.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689772400154.png)
 
 
 
@@ -195,11 +195,11 @@ SELECT table_name, NULL FROM all_tables;
 
 Request Header:
 
-![1689774859879.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689774859879.png)
+![1689774859879.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689774859879.png)
 
 Response Header:
 
-![1689774944613.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689774944613.png)
+![1689774944613.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689774944613.png)
 
 In the response header we could see names of tables that are currently available in the database:
 
@@ -207,11 +207,11 @@ According to the previous challenge we recognized the table name as this `USERS_
 
 We now go further to query the available columns in that table:
 
-![1689775260747.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689775260747.png)
+![1689775260747.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689775260747.png)
 
 Response header:
 
-![1689775287471.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689775287471.png)
+![1689775287471.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689775287471.png)
 
 In the resopnse header we have two column feilds:
 
@@ -229,15 +229,15 @@ SELECT USERNAME_HWTRTV,PASSWORD_USCCVP FROM USERS_XNIZHH;
 
 Request Header:
 
-![1689775831853.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689775831853.png)
+![1689775831853.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689775831853.png)
 
 Response Header:
 
-![1689775857131.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689775857131.png)
+![1689775857131.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689775857131.png)
 
 We now use this details to login as admin:
 
-![1689775926897.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689775926897.png)
+![1689775926897.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689775926897.png)
 
 
 
@@ -273,11 +273,11 @@ SELECT NULL, NULL FROM infromatioN_schema.tables;
 
 This query also returned same error, we keep on like this till we got to the third entry and got a `200 OK` response:
 
-![1689776206345.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689776206345.png)
+![1689776206345.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689776206345.png)
 
 And that's all for this challenge:
 
-![1689776246853.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689776246853.png)
+![1689776246853.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689776246853.png)
 
 
 
@@ -295,11 +295,11 @@ The lab will provide a random value that you need to make appear within the quer
 This technique helps you determine which columns are compatible with
 string data.
 
-![1689848880602.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689848880602.png)
+![1689848880602.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689848880602.png)
 
-![1689848905389.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689848905389.png)
+![1689848905389.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689848905389.png)
 
-![1689849131270.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689849131270.png)
+![1689849131270.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689849131270.png)
 
 
 
@@ -321,17 +321,17 @@ we make  a request to the category section and intercept the request with our pa
 UNION SELECT username, password from users--
 ```
 
-![1689849383114.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689849383114.png)
+![1689849383114.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689849383114.png)
 
 
 after sending the request we got the following response:
 
 
-![1689849405986.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689849405986.png)
+![1689849405986.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689849405986.png)
 
 we then logging:
 
-![1689849477805.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689849477805.png)
+![1689849477805.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689849477805.png)
 
 
 # Lab: [SQL injection UNION](https://portswigger.net/web-security/sql-injection/union-attacks) attack, retrieving multiple values in a single column
@@ -353,15 +353,15 @@ In SQL there's a concat method to join result of query together either using the
 UNION SELECT NULL, CONCAT(username, CONCAT('~', password) FROM users--; 
 ```
 
-![1689850380622.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689850380622.png)
+![1689850380622.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689850380622.png)
 
 after sending the request we get the following response:
 
-![1689850403969.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689850403969.png)
+![1689850403969.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689850403969.png)
 
 we use the information to logging:
 
-![1689850469640.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689850469640.png)
+![1689850469640.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689850469640.png)
 
 
 # Lab: [Blind SQL injection](https://portswigger.net/web-security/sql-injection/blind) with conditional responses
@@ -386,11 +386,11 @@ we try a simple example with this sql injection query:
 
 We send the following request:
 
-![1689854395892.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689854395892.png)
+![1689854395892.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689854395892.png)
 
 And we confirm that our sql injected query was runned successfully with the "Welcome back!" message in the response:
 
-![1689854439146.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689854439146.png)
+![1689854439146.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689854439146.png)
 
 We now go further to execute our blind sql injection in order to extract details of the administrator password, reason it's called blind sql injection is that the result of the query is not directly returned but we could know for sure if such query is true, by a response we know just like the above example, so we try checking each individual character of the password column of the administrator password and try to determine if the character exist, if it exist we should see a "Welcome back!" message otherwise we won't see any
 
@@ -404,16 +404,16 @@ The above query checks if a substring at a particular index in the password colu
 
 This an example of the code:
 
-![1689854516353.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689854516353.png)
+![1689854516353.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689854516353.png)
 
 Request's response:
 
-![1689854573035.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689854573035.png)
+![1689854573035.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689854573035.png)
 
 
 we could see at index 1, there exist a character '8' which holds true meaning we got a "Welcome back!" message:
 
-![1689854601763.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689854601763.png)
+![1689854601763.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689854601763.png)
 
 instead of doing it individually we decide to use intruder with option set to cluster bomb we select the index as first payload with paramesers numbers from 1-20 and our second payload to be character with paramet 0-9a-z, we then set the grep match keyword to match the "Welcome back!" message in the response and then launch the attack.
 
@@ -425,7 +425,7 @@ password = wpfbezg2o0bnu4zo0nha
 
 We then logging using it:
 
-![1689865757829.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689865757829.png)
+![1689865757829.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689865757829.png)
 
 
 
@@ -447,11 +447,11 @@ This lab is simillar to the previous error, but in this scenairo we use the erro
 
 The above query trys to check if a certain character at a particular index is the same as the one being compared then it executes the `TO_CHAR(1/0)` code which returns error since it's division by zero error, otherwise it returns nothing, we inject the above query into our payload and confirm our assertion, simillar to the previous lab we use intruder to automate the index and character checking to make it more faster:
 
-![1689866795989.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689866795989.png)
+![1689866795989.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689866795989.png)
 
 Response output:
 
-![1689876408074.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689876408074.png)
+![1689876408074.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689876408074.png)
 
 from the above response we filter the column according to response with server error (500 status code) then extract the password:
 
@@ -463,7 +463,7 @@ password = yzrssi3kfz8y9yxj9idk
 
 We use this password to logging and we have:
 
-![1689877030752.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689877030752.png)
+![1689877030752.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689877030752.png)
 
 
 
@@ -479,19 +479,19 @@ As usuall we intercept the request and include our sql injection query, this lab
 AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--;
 ```
 
-![1689877983211.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689877983211.png)
+![1689877983211.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689877983211.png)
 
 The response returns a single username from the database:
 
-![1689878008349.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689878008349.png)
+![1689878008349.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689878008349.png)
 
 We do thesame to retrive the password:
 
-![1689878036264.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689878036264.png)
+![1689878036264.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689878036264.png)
 
 Response:
 
-![1689878058303.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689878058303.png)
+![1689878058303.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689878058303.png)
 
 ```python
 Password = tkrril3txwoib8giyhwj
@@ -499,7 +499,7 @@ Password = tkrril3txwoib8giyhwj
 
 we use the information to loging as admin:
 
-![1689878110283.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689878110283.png)
+![1689878110283.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689878110283.png)
 
 
 # Lab: [Blind SQL injection](https://portswigger.net/web-security/sql-injection/blind) with time delays
@@ -522,12 +522,12 @@ in sql we use the `pg_sleep` command to perform such action:
 
 Request to the site is :
 
-![1689878928535.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689878928535.png)
+![1689878928535.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689878928535.png)
 
 The goal of the lab is to show we could execute such statement and see how long it takes for the response to get back to us, in this case it is 10 seconds, this the output of the result:
 
 
-![1689879024362.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689879024362.png)
+![1689879024362.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689879024362.png)
 
 
 
@@ -552,19 +552,19 @@ SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,{index}, 1)='{
 
 What the above sql code does is that it checks if a character exist at a particular index of the administrator password column, if the statement holds true it sleeps for 10 seconds and otherwise it doesn't sleep atall or for 0 seconds, we input this into the TrackingId field parameter:
 
-![1689922680651.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689922680651.png)
+![1689922680651.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689922680651.png)
 
 we send this request and capture the response which we then filter accoring to the highest response of 10's of thousand:
 
-![1690552292510.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1690552292510.png)
+![1690552292510.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1690552292510.png)
 
 we commented the filtered part and then scrape off the remaing part:
 
-![1690552188003.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1690552188003.png)
+![1690552188003.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1690552188003.png)
 
 we extract the password and logged in :
 
-![1690552416910.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1690552416910.png)
+![1690552416910.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1690552416910.png)
 
 
 
@@ -587,11 +587,11 @@ What the above injection query does is to make the sql to execute the xml code w
 
 We sent that request to the server:
 
-![1689924352388.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689924352388.png)
+![1689924352388.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689924352388.png)
 
 Response from the collaborator client, we could see that our dns url was pinged with 4 responses:
 
-![1689924405735.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689924405735.png)
+![1689924405735.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689924405735.png)
 
 
 
@@ -618,15 +618,15 @@ UNION SELECT EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f
 
 The above payload does exactly that; appends the password to the DNS query, we then send the request to the server:
 
-![1689926328502.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689926328502.png)
+![1689926328502.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689926328502.png)
 
 This the result of the ping, from the below picture we could see that the administrator password was appended as the subdomain, we could now use this information to login as admin.
 
-![1689926367132.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689926367132.png)
+![1689926367132.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689926367132.png)
 
 After logging in:
 
-![1689926474538.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689926474538.png)
+![1689926474538.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689926474538.png)
 
 
 
@@ -648,15 +648,15 @@ we got an error message from the server saying something like "injection detecte
 
 Request sent:
 
-![1689943006777.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689943006777.png)
+![1689943006777.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689943006777.png)
 
 Response recieved:
 
-![1689943038343.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689943038343.png)
+![1689943038343.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689943038343.png)
 
 using the above information to login :
 
-![1689943075984.png](https://blog.cyb3rguru.tech/posts/portswigger/SQL/images/1689943075984.png)
+![1689943075984.png](https://cyberguru1.github.io/posts/portswigger/SQL/images/1689943075984.png)
 
 COMMENTS AND REMARKS:
 

@@ -26,13 +26,13 @@ Now back to the challenge, for a user to be granted access the user must pass th
 
 Changing the comparison operator from **"=="** to **"==="** correctly passes the check cases and throws our flag.
 
-![image](https://blog.cyb3rguru.tech/posts/CTF/images/oie_C7BerbRBduib.png)
+![image](https://cyberguru1.github.io/posts/CTF/images/oie_C7BerbRBduib.png)
 
 ## Nimbus prime (OSINT)
 
 An image was given, and the challenge was to find the location the latitude and longitude of the place -
 
-![Phote](https://blog.cyb3rguru.tech/posts/CTF/images/chall.jpg)
+![Phote](https://cyberguru1.github.io/posts/CTF/images/chall.jpg)
 
 my first attempt was using [tinyeye](tinyeye.com) to do a reverse image search, but nothing came up.
 Taking a close look at the pic we could see that it's like an airport or railway station cause of the people in the pic with luggage,
@@ -40,16 +40,16 @@ another thing to observe was the nimbus monument (all harry potter fans should k
 
 i went on to google map to search for the nimbus monument, one that is specifically around a station of some sort
 
-![staion](https://blog.cyb3rguru.tech/posts/CTF/images/oie_SOKYbPKgzbzo.png)
+![staion](https://cyberguru1.github.io/posts/CTF/images/oie_SOKYbPKgzbzo.png)
 
 Well the results weren't that appealing to what I was looking for
 
 my last attempt was using google lens, it brought up a result instantly
-![google_lens](https://blog.cyb3rguru.tech/posts/CTF/images/google_lens.png)
+![google_lens](https://cyberguru1.github.io/posts/CTF/images/google_lens.png)
 
 going to google maps and doing more search on the area I got the exact location
 
-![result](https://blog.cyb3rguru.tech/posts/CTF/images/Screenshot_2022-11-04_11_07_20.png)
+![result](https://cyberguru1.github.io/posts/CTF/images/Screenshot_2022-11-04_11_07_20.png)
 
 atlas my intuition was correct it was an airport station called "Humberto Delgado Airport" !!!
 getting the latt and long and submitting it
@@ -59,32 +59,32 @@ gave us our flag.....Nice OSINT challenge i enjoyed it. :laughing:
 
 This challenge has to do with reversing a c++ binary file, two files were given in the challenge
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/files.png)
+![](https://cyberguru1.github.io/posts/CTF/images/files.png)
 
 the encryptor executable file and an encrypted flag called flag.enc, checking the file type with the file command we see its an ELF 64-bit executable
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/file_type.png)
+![](https://cyberguru1.github.io/posts/CTF/images/file_type.png)
 
 Running the encryptor file we see that it ask for text input, supplying a string returns a hexadecimal content which is way longer than our string,
-![](https://blog.cyb3rguru.tech/posts/CTF/images/run.png)
+![](https://cyberguru1.github.io/posts/CTF/images/run.png)
 
 unhexing the content we see it encrypted and it doesn't give us back our input string
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/encr_cont.png)
+![](https://cyberguru1.github.io/posts/CTF/images/encr_cont.png)
 
 using ltrace to run the program again we have
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/ltrace.png)
+![](https://cyberguru1.github.io/posts/CTF/images/ltrace.png)
 
 we could see a lot of calls starting with _zNSt7 this proves to us that its a c++ compiled binary
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/ltrace_examine.png)
+![](https://cyberguru1.github.io/posts/CTF/images/ltrace_examine.png)
 
 examining the ltrace output we see a call to print function `printf("%02x", 0x2b)` that prints out the hex string right after some calls to some function named `_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm(0x7ffe8787d6a0, 11, 11, 0)`
 
 opening the file in ghidra and examining the file from the entry to the main
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/g1.png)
+![](https://cyberguru1.github.io/posts/CTF/images/g1.png)
 
 the first rectangle shows us the output text that prompted us to input a text using `std::operator<< ` and stores it in in `local_98` using `std::operator>>` the content of our input is now passed to the function  `FUN_00102295` along with a string called "toka", analyzing the function we see that our input text is reversed and the toka string is appended on to our input and becomes "urugerbyctoka", the function now went on to split the text using even and odd index, that is each character of our combined string that falls into the even index are stored in a separate variable and same for the odd strings, then the even variable strings are shifted forward in 3 places using shift cipher and the odd variables where shifted backward in 3 places after this operation is done, the string is now appended back
 according to the order of indexes, illustrating
@@ -101,19 +101,19 @@ confirming our analysis using gdb we have:
 
 - for the first operation where the string was reversed and toka added:
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/gdb1.png)
+![](https://cyberguru1.github.io/posts/CTF/images/gdb1.png)
 
 - the second operation where the odd indexes were shifted
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/odd.png)
+![](https://cyberguru1.github.io/posts/CTF/images/odd.png)
 
 - last operation where even and odd indexes were combined:
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/last.png)
+![](https://cyberguru1.github.io/posts/CTF/images/last.png)
 
 the content of this function is now returned to another function that performs some bitwise shifting on each string
 
-![](https://blog.cyb3rguru.tech/posts/CTF/images/g2.png)
+![](https://cyberguru1.github.io/posts/CTF/images/g2.png)
 
 * explanation of the function:
   the function loops through each character of the combined string and performs:
@@ -172,8 +172,8 @@ def decode(hexx):
 
 The script performs each operation in the reverse order keeping in mind some constraints while performing bitwise shift and XORing, now that our script is ready we now open the content of the `flag.enc`
 
-![flag.enc](https://blog.cyb3rguru.tech/posts/CTF/images/flag.png)
+![flag.enc](https://cyberguru1.github.io/posts/CTF/images/flag.png)
 
 coping the hex content and running it with our script we have
 
-![flage](https://blog.cyb3rguru.tech/posts/CTF/images/flaged.png)
+![flage](https://cyberguru1.github.io/posts/CTF/images/flaged.png)

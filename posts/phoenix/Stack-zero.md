@@ -1,6 +1,6 @@
 ## Stack-Zero
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_header.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_header.png)
 
 This is the first challenge from the stack overflow series of phoenix previously known as protostar so let's get right into it, from the challenge site a source code was given as shown below:
 
@@ -80,30 +80,30 @@ Demonstrating:
 
 we first launch the program and try giving it an input of 64 bytes of A's to see the program reaction; we could easily do this in python and pass the result using pipe `|` to the program
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_s1.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_s1.png)
 
 we could see that the changeme variable hasn't been changed, overflowing the buffer by just increasing the values of A's from 64 to 65 will cause the `locals.buffer` to overflow and change the current value of the `locals.changeme`
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_s2.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_s2.png)
 
 and violla!! we successfully changed the value of changeme varaible........but  what's really going on under the hood let's enter gdb and see what exactly
 
 we opened the program in gdb and show the disassembly code:
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_gdb1.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_gdb1.png)
 
 from the source code we could see that the address of the local struct variables of buffer array and changeme is at `rbp-50` and `rbp-0x10` respectively
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_gdb5.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_gdb5.png)
 
 knowing these we could simply set a breakpoint at the comparision point in the assembly that is `test eax, eax` then we examine the stack
 
 runnig the program and supplying it 65 A's we reached the breakpoint
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_gdb6.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_gdb6.png)
 
 we could see that the buffer array of size 64 starts from `0x7fffffffe660 - 90` that's exactly `0x50` in hex if you subtract it, while the address of the changeme variable is at `0x7fffffffe6a0` (stack address grows downward) where we could see our last A after the 64 A's that have filled up the buffer went to
 
 continuing the program gives us our well done message
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st0_gdb4.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st0_gdb4.png)

@@ -1,7 +1,7 @@
 ## Stack-Four
 ---
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st4_header.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st4_header.png)
 
 ### Source Code
 ----
@@ -94,7 +94,7 @@ The goal of this challenge is to overwrite the saved instruction pointer `$rip`,
 
 Using GDB to get the address of the `complete_level` function :
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st4_f-address.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st4_f-address.png)
 
 we got the address of the `complete_level` function to be `0x40061d`
 
@@ -182,7 +182,7 @@ print(p.recvall().decode())
 
 Running the script we got:
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st4-result.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st4-result.png)
 
 and waaala we got the congratz message!!!!!!!
 

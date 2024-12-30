@@ -1,10 +1,10 @@
 # **Popcorn**
 
-![1697021818482.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1697021818482.png)
+![1697021818482.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1697021818482.png)
 
 
 
-![1696924564296.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696924564296.png)
+![1696924564296.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696924564296.png)
 
 This is the beginning of my hackthebox series, and our first machine would be popcorn.
 
@@ -12,7 +12,7 @@ Popcorn, while not overly complicated, contains quite a bit of content and it ca
 
 Let's Dig in, first, we start by spawnning up the machine in hackthebox and retrive the provided ip address
 
-![1696924977285.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696924977285.png)
+![1696924977285.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696924977285.png)
 
 we then now use nmap to scan the network for available ports, this the result of nmap:
 
@@ -38,7 +38,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 In the above result we could see ssh and a web server ports opened, we navigate to the site using the ip address and got this:
 
-![1696925794586.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696925794586.png)
+![1696925794586.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696925794586.png)
 
 Next, we try to perform path enumeration using dirb:
 
@@ -84,7 +84,7 @@ we try accessing the '/test' endpont and only got the default apache test page w
 
 we then check the "/torrent" endpoint and saw a torrent upload service:
 
-![1696926161702.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696926161702.png)
+![1696926161702.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696926161702.png)
 
 Accessing the '/torrent' end point redirects us to  "popcorn.htb", which was showing Not found error, this may me a dns problem, so we solved it by adding the ip address and domain name to our /etc/host file:
 
@@ -94,15 +94,15 @@ After successfully accessing the site, we then click on login to login with defa
 
 We check arround the page and search for common vulnerability we can exploit to get into the system, we saw and upload service that only accepts torrent files so we try uploading one:
 
-![1696926572348.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696926572348.png)
+![1696926572348.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696926572348.png)
 
 we upload a movie torrent file to the site
 
-![1696926927344.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696926927344.png)
+![1696926927344.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696926927344.png)
 
 we try exploiting this upload service to upload our php shell file but no luck, since it only accepts torrent files only after going through so many checks, after uploading the torrent file, we colud see a screenshot image which we could update by uploading another picture:
 
-![1696927059547.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696927059547.png)
+![1696927059547.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696927059547.png)
 
 As shown above, we could only upload a file with an email extension. so let's prepare our payload;
 
@@ -124,23 +124,23 @@ we put the following in the middle of the file:
 <?php echo system($_GET['cmd']); ?>
 ```
 
-![1696927404204.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696927404204.png)
+![1696927404204.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696927404204.png)
 
 One more step, we need to add a png extension so that it passes the extension validaton:
 
 we add .png to the file extension:
 
-![1696936394167.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696936394167.png)
+![1696936394167.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696936394167.png)
 
 we can now upload this file to the server and we got a successful upload message 🎉️
 
 Next off, is to find where this image is uploaded, let's check the upload section:
 
-![1696936702056.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696936702056.png)
+![1696936702056.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696936702056.png)
 
 we could see our uploaded payload with the .php extension, let's try accessing it:
 
-![1696936804810.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696936804810.png)
+![1696936804810.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696936804810.png)
 
 we could now see the payload executing, let's try listing the directory:
 
@@ -150,7 +150,7 @@ using:
 http://popcorn.htb/torrent/upload/86adccf057ac813938d277c05334239eaf7ebd3d.php?cmd=ls%20-al
 ```
 
-![1696936863300.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696936863300.png)
+![1696936863300.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696936863300.png)
 
 Hurray, we now have code execution 🎉️
 
@@ -160,31 +160,31 @@ To get a reverse shell we need to prepare our payload and upload it into the ser
 
 we do this by hosting a http server in where our payload is hosted on port 7000
 
-![1696945127248.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945127248.png)
+![1696945127248.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945127248.png)
 
 we then use wget to download this payload on the server and saved it as gear2.php, we use url encode:
 
-![1696945222090.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945222090.png)
+![1696945222090.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945222090.png)
 
 Request payload
 
-![1696945256499.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945256499.png)
+![1696945256499.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945256499.png)
 
 after sending the request we could confirm that the payload is on the server saved as gear2.php:
 
-![1696945293919.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945293919.png)
+![1696945293919.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945293919.png)
 
 we setup a netcat listener on port 9000; all this as been configured in the gear2.php payload sent earlier with our ip address and port of 9000:
 
-![1696945393375.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945393375.png)
+![1696945393375.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945393375.png)
 
 After clicking on gear2.php we get a reverse shell:
 
-![1696945432233.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945432233.png)
+![1696945432233.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945432233.png)
 
 we extract the user hash stored in user george home directory and submit:
 
-![1696945660927.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1696945660927.png)
+![1696945660927.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1696945660927.png)
 
 # **Priviledge Escalation**
 
@@ -192,7 +192,7 @@ Time to use gear 3 for priviledge escalation 😄
 
 we use [dirtycow](https://github.com/FireFart/dirtycow/blob/master/dirty.c) for gear 3, we download it and host it using our simple http server, and downloaded it in the machine
 
-![1697021456679.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1697021456679.png)
+![1697021456679.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1697021456679.png)
 
 we then use the following command to compile it
 
@@ -202,16 +202,16 @@ we then use the following command to compile it
 
 Then we run the executable:
 
-![1697021540647.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1697021540647.png)
+![1697021540647.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1697021540647.png)
 
 After running the compiled executable, it creates a new user called firefart with a password configured by us,
 
 we then try to login using that user name and password:
 
-![1697021664453.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1697021664453.png)
+![1697021664453.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1697021664453.png)
 
 we now have root priviledges, so lets get the root hash:
 
-![1697021696161.png](https://blog.cyb3rguru.tech/posts/hackthebox/popcorn/1697021696161.png)
+![1697021696161.png](https://cyberguru1.github.io/posts/hackthebox/popcorn/1697021696161.png)
 
 And we have successfully pwned popcorn.

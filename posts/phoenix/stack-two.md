@@ -1,6 +1,6 @@
 ## Stack-Two
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st2_header.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st2_header.png)
 
 The source code provided:
 
@@ -141,5 +141,5 @@ print(s.run(f"printenv;echo {message};export {env_var};printenv;{run_prog}").rec
 
 So running the program we have:
 
-![](https://blog.cyb3rguru.tech/posts/phoenix/files/st2_result.png)
+![](https://cyberguru1.github.io/posts/phoenix/files/st2_result.png)
 
